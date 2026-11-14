@@ -70,6 +70,8 @@ npm run wp:setup     # install WordPress, Hello Elementor, Elementor and the plu
 npm run build        # build theme/assets/ (npm run dev: watch + browser-sync)
 ```
 
+The setup creates a local admin, `admin` / `password`. It is for the local Docker site only: never reuse it on a public server.
+
 The pages, Elementor layout and media live in the database. They are not part of the repository. The layout and design system are exported to `elementor/` and can be imported as templates. See [elementor/README.md](elementor/README.md).
 
 ## Credits

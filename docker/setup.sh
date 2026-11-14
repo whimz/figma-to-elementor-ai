@@ -11,6 +11,8 @@ if [ ! -f /var/www/html/wp-config.php ]; then
 	exit 1
 fi
 
+# admin / password is for this local Docker site only. Never reuse it on a public server: after moving
+# the database there, replace the admin user (or at least its password) and revoke application passwords.
 if ! wp core is-installed 2>/dev/null; then
 	wp core install \
 		--url="$SITE_URL" \
