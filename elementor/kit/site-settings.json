@@ -1,0 +1,364 @@
+{
+    "content": [],
+    "settings": {
+        "template": "default",
+        "system_typography": [
+            {
+                "_id": "primary",
+                "title": "Primary",
+                "typography_typography": "custom",
+                "typography_font_family": "Quicksand",
+                "typography_font_weight": "600"
+            },
+            {
+                "_id": "secondary",
+                "title": "Secondary",
+                "typography_typography": "custom",
+                "typography_font_family": "Quicksand",
+                "typography_font_weight": "400"
+            },
+            {
+                "_id": "text",
+                "title": "Text",
+                "typography_typography": "custom",
+                "typography_font_family": "Quicksand",
+                "typography_font_weight": "400"
+            },
+            {
+                "_id": "accent",
+                "title": "Accent",
+                "typography_typography": "custom",
+                "typography_font_family": "Quicksand",
+                "typography_font_weight": "500"
+            }
+        ],
+        "system_colors": [
+            {
+                "_id": "primary",
+                "title": "Primary",
+                "color": "#4A00E6"
+            },
+            {
+                "_id": "secondary",
+                "title": "Secondary",
+                "color": "#FDB048"
+            },
+            {
+                "_id": "text",
+                "title": "Text",
+                "color": "#5D5D5D"
+            },
+            {
+                "_id": "accent",
+                "title": "Accent",
+                "color": "#77408C"
+            }
+        ],
+        "colors_enable_styleguide_preview": "",
+        "custom_colors": [],
+        "typography_enable_styleguide_preview": "",
+        "custom_typography": [],
+        "default_generic_fonts": "Sans-serif",
+        "button_background_color": "",
+        "button_background_color_b": "#f2295b",
+        "button_background_video_link": "",
+        "button_background_video_start": "",
+        "button_background_video_end": "",
+        "button_background_play_once": "",
+        "button_background_play_on_mobile": "",
+        "button_background_privacy_mode": "",
+        "button_background_slideshow_gallery": [],
+        "button_background_slideshow_loop": "yes",
+        "button_background_slideshow_slide_duration": 5000,
+        "button_background_slideshow_slide_transition": "fade",
+        "button_background_slideshow_transition_duration": 500,
+        "button_background_slideshow_lazyload": "",
+        "button_background_slideshow_ken_burns": "",
+        "button_background_slideshow_ken_burns_zoom_direction": "in",
+        "button_hover_background_color": "",
+        "button_hover_background_color_b": "#f2295b",
+        "button_hover_background_video_link": "",
+        "button_hover_background_video_start": "",
+        "button_hover_background_video_end": "",
+        "button_hover_background_play_once": "",
+        "button_hover_background_play_on_mobile": "",
+        "button_hover_background_privacy_mode": "",
+        "button_hover_background_slideshow_gallery": [],
+        "button_hover_background_slideshow_loop": "yes",
+        "button_hover_background_slideshow_slide_duration": 5000,
+        "button_hover_background_slideshow_slide_transition": "fade",
+        "button_hover_background_slideshow_transition_duration": 500,
+        "button_hover_background_slideshow_lazyload": "",
+        "button_hover_background_slideshow_ken_burns": "",
+        "button_hover_background_slideshow_ken_burns_zoom_direction": "in",
+        "body_background_background": "",
+        "body_background_color": "",
+        "body_background_color_b": "#f2295b",
+        "body_background_image": {
+            "url": "",
+            "id": "",
+            "size": ""
+        },
+        "body_background_video_link": "",
+        "body_background_video_start": "",
+        "body_background_video_end": "",
+        "body_background_play_once": "",
+        "body_background_play_on_mobile": "",
+        "body_background_privacy_mode": "",
+        "body_background_slideshow_gallery": [],
+        "body_background_slideshow_loop": "yes",
+        "body_background_slideshow_slide_duration": 5000,
+        "body_background_slideshow_slide_transition": "fade",
+        "body_background_slideshow_transition_duration": 500,
+        "body_background_slideshow_lazyload": "",
+        "body_background_slideshow_ken_burns": "",
+        "body_background_slideshow_ken_burns_zoom_direction": "in",
+        "mobile_browser_background": "",
+        "stretched_section_container": "",
+        "default_page_template": "default",
+        "active_breakpoints": [
+            "viewport_mobile",
+            "viewport_tablet",
+            "viewport_tablet_extra"
+        ],
+        "viewport_mobile": "",
+        "viewport_mobile_extra": "",
+        "viewport_tablet": "",
+        "viewport_tablet_extra": 1200,
+        "viewport_laptop": "",
+        "viewport_widescreen": "",
+        "viewport_md": 768,
+        "viewport_lg": 1025,
+        "global_image_lightbox": "yes",
+        "lightbox_enable_counter": "yes",
+        "lightbox_enable_fullscreen": "yes",
+        "lightbox_enable_zoom": "yes",
+        "lightbox_enable_share": "yes",
+        "lightbox_title_src": "title",
+        "lightbox_description_src": "description",
+        "hello_header_logo_display": "yes",
+        "hello_header_tagline_display": "yes",
+        "hello_header_menu_display": "yes",
+        "hello_header_layout": "default",
+        "hello_header_width": "boxed",
+        "hello_header_background_color": "",
+        "hello_header_background_color_b": "#f2295b",
+        "hello_header_background_image": {
+            "url": "",
+            "id": "",
+            "size": ""
+        },
+        "hello_header_background_video_link": "",
+        "hello_header_background_video_start": "",
+        "hello_header_background_video_end": "",
+        "hello_header_background_play_once": "",
+        "hello_header_background_play_on_mobile": "",
+        "hello_header_background_privacy_mode": "",
+        "hello_header_background_slideshow_gallery": [],
+        "hello_header_background_slideshow_loop": "yes",
+        "hello_header_background_slideshow_slide_duration": 5000,
+        "hello_header_background_slideshow_slide_transition": "fade",
+        "hello_header_background_slideshow_transition_duration": 500,
+        "hello_header_background_slideshow_lazyload": "",
+        "hello_header_background_slideshow_ken_burns": "",
+        "hello_header_background_slideshow_ken_burns_zoom_direction": "in",
+        "hello_header_logo_type": "title",
+        "hello_header_menu": 2,
+        "hello_header_menu_layout": "horizontal",
+        "hello_header_menu_dropdown": "tablet",
+        "hello_footer_logo_display": "yes",
+        "hello_footer_tagline_display": "yes",
+        "hello_footer_menu_display": "yes",
+        "hello_footer_copyright_display": "yes",
+        "hello_footer_layout": "default",
+        "hello_footer_width": "boxed",
+        "hello_footer_background_color": "",
+        "hello_footer_background_color_b": "#f2295b",
+        "hello_footer_background_image": {
+            "url": "",
+            "id": "",
+            "size": ""
+        },
+        "hello_footer_background_video_link": "",
+        "hello_footer_background_video_start": "",
+        "hello_footer_background_video_end": "",
+        "hello_footer_background_play_once": "",
+        "hello_footer_background_play_on_mobile": "",
+        "hello_footer_background_privacy_mode": "",
+        "hello_footer_background_slideshow_gallery": [],
+        "hello_footer_background_slideshow_loop": "yes",
+        "hello_footer_background_slideshow_slide_duration": 5000,
+        "hello_footer_background_slideshow_slide_transition": "fade",
+        "hello_footer_background_slideshow_transition_duration": 500,
+        "hello_footer_background_slideshow_lazyload": "",
+        "hello_footer_background_slideshow_ken_burns": "",
+        "hello_footer_background_slideshow_ken_burns_zoom_direction": "in",
+        "hello_footer_logo_type": "logo",
+        "hello_footer_menu": 0,
+        "hello_footer_copyright_text": "All rights reserved"
+    },
+    "metadata": [],
+    "experiments": {
+        "e_font_icon_svg": {
+            "name": "e_font_icon_svg",
+            "title": "Inline Font Icons",
+            "state": "default",
+            "default": "active",
+            "release_status": "stable"
+        },
+        "additional_custom_breakpoints": {
+            "name": "additional_custom_breakpoints",
+            "title": "Additional Custom Breakpoints",
+            "state": "default",
+            "default": "active",
+            "release_status": "stable"
+        },
+        "container": {
+            "name": "container",
+            "title": "Container",
+            "state": "default",
+            "default": "active",
+            "release_status": "stable"
+        },
+        "e_optimized_markup": {
+            "name": "e_optimized_markup",
+            "title": "Optimized Markup",
+            "state": "default",
+            "default": "active",
+            "release_status": "stable"
+        },
+        "e_optimized_css_files": {
+            "name": "e_optimized_css_files",
+            "title": "Optimized CSS Files",
+            "state": "default",
+            "default": "inactive",
+            "release_status": "alpha"
+        },
+        "hello-theme-header-footer": {
+            "name": "hello-theme-header-footer",
+            "title": "Header &amp; Footer",
+            "state": "default",
+            "default": "active",
+            "release_status": "stable"
+        },
+        "e_mcp_revision_snapshots": {
+            "name": "e_mcp_revision_snapshots",
+            "title": "MCP undo through revisions",
+            "state": "default",
+            "default": "active",
+            "release_status": "beta"
+        },
+        "nested-elements": {
+            "name": "nested-elements",
+            "title": "Nested Elements",
+            "state": "default",
+            "default": "active",
+            "release_status": "stable"
+        },
+        "pages_panel": {
+            "name": "pages_panel",
+            "title": "Pages Panel",
+            "state": "default",
+            "default": "inactive",
+            "release_status": "alpha"
+        },
+        "e_atomic_elements": {
+            "name": "e_atomic_elements",
+            "title": "Atomic Widgets",
+            "state": "default",
+            "default": "active",
+            "release_status": "beta"
+        },
+        "e_icon_button": {
+            "name": "e_icon_button",
+            "title": "Icon Button",
+            "state": "default",
+            "default": "inactive",
+            "release_status": "dev"
+        },
+        "e_accordion": {
+            "name": "e_accordion",
+            "title": "Accordion",
+            "state": "default",
+            "default": "inactive",
+            "release_status": "dev"
+        },
+        "launchpad-checklist": {
+            "name": "launchpad-checklist",
+            "title": "Launchpad Checklist",
+            "state": "default",
+            "default": "inactive",
+            "release_status": "stable"
+        },
+        "e_page_audit": {
+            "name": "e_page_audit",
+            "title": "Page Audit",
+            "state": "default",
+            "default": "inactive",
+            "release_status": "beta"
+        },
+        "e_opt_in_v4": {
+            "name": "e_opt_in_v4",
+            "title": "Editor V4",
+            "state": "default",
+            "default": "active",
+            "release_status": "alpha"
+        },
+        "e_component_variants": {
+            "name": "e_component_variants",
+            "title": "Component Variants",
+            "state": "default",
+            "default": "inactive",
+            "release_status": "dev"
+        },
+        "e_angie_in_panels": {
+            "name": "e_angie_in_panels",
+            "title": "Angie in editor panels",
+            "state": "default",
+            "default": "inactive",
+            "release_status": "dev"
+        },
+        "markdown_rendering": {
+            "name": "markdown_rendering",
+            "title": "Generate website markdown",
+            "state": "default",
+            "default": "inactive",
+            "release_status": "alpha"
+        },
+        "e_assets_manager": {
+            "name": "e_assets_manager",
+            "title": "Dynamic Assets Management",
+            "state": "default",
+            "default": "inactive",
+            "release_status": "dev"
+        },
+        "import-export-customization": {
+            "name": "import-export-customization",
+            "title": "Import/Export Customization",
+            "state": "default",
+            "default": "active",
+            "release_status": "beta"
+        },
+        "e_onboarding": {
+            "name": "e_onboarding",
+            "title": "New Onboarding",
+            "state": "default",
+            "default": "inactive",
+            "release_status": "dev"
+        },
+        "in_editor_feedback": {
+            "name": "in_editor_feedback",
+            "title": "In-Editor Feedback",
+            "state": "default",
+            "default": "inactive",
+            "release_status": "beta"
+        },
+        "editor_events": {
+            "name": "editor_events",
+            "title": "Elementor Editor Events",
+            "state": "default",
+            "default": "active",
+            "release_status": "alpha"
+        }
+    }
+}

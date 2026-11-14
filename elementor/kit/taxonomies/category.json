@@ -1,0 +1,50 @@
+[
+    {
+        "term_id": 1,
+        "name": "Tax",
+        "slug": "tax",
+        "taxonomy": "category",
+        "description": "Guides to how crypto income, gains and rewards are taxed.",
+        "parent": 0
+    },
+    {
+        "term_id": 21,
+        "name": "Steuern",
+        "slug": "steuern",
+        "taxonomy": "category",
+        "description": "Ratgeber dazu, wie Krypto-Einkünfte, Gewinne und Erträge besteuert werden.",
+        "parent": 0
+    },
+    {
+        "term_id": 24,
+        "name": "Reports &amp; Guides",
+        "slug": "reports-guides",
+        "taxonomy": "category",
+        "description": "Checklists and step-by-step guides for reporting crypto.",
+        "parent": 0
+    },
+    {
+        "term_id": 26,
+        "name": "Berichte &amp; Leitfäden",
+        "slug": "berichte-leitfaeden",
+        "taxonomy": "category",
+        "description": "Checklisten und Schritt-für-Schritt-Anleitungen für Krypto-Steuerberichte.",
+        "parent": 0
+    },
+    {
+        "term_id": 29,
+        "name": "Technology",
+        "slug": "technology",
+        "taxonomy": "category",
+        "description": "How our software turns raw blockchain data into tax reports.",
+        "parent": 0
+    },
+    {
+        "term_id": 31,
+        "name": "Technologie",
+        "slug": "technologie",
+        "taxonomy": "category",
+        "description": "Wie unsere Software Blockchain-Rohdaten in Steuerberichte verwandelt.",
+        "parent": 0
+    }
+]

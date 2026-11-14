@@ -1,0 +1,284 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<style>html,body{margin:0;background:#000}canvas{display:block}</style>
+</head>
+<body>
+<canvas id="c" width="1920" height="1080"></canvas>
+<script>
+// Portfolio video "Figma → agent → finished page", drawn on a canvas and recorded by MediaRecorder.
+const W = 1920, H = 1080;
+const ctx = document.getElementById('c').getContext('2d');
+const IMG = {};
+const SRC = {
+	figma: '/figma/ref/home-1440.png',
+	homeFull: '/portfolio/raw/desk-home-full.png',
+	homeMob: '/portfolio/raw/mob-home-full.png',
+	editor: '/portfolio/raw/editor-home.png',
+	siteTop: '/portfolio/raw/desk-home-top.png',
+	blog: '/portfolio/raw/desk-blog-top.png',
+	de: '/portfolio/raw/desk-home-de-top.png',
+};
+const CODE = [
+	'› elementor-build-composition',
+	'  post_id: 306',
+	'  <e-flexbox configuration-id="A2 Why Legite">',
+	'    <e-flexbox configuration-id="A2 container">',
+	'      <e-paragraph configuration-id="A2 badge"/>',
+	'      <e-heading configuration-id="A2 heading"/>',
+	'      <e-flexbox configuration-id="A2 points"> …',
+	'  classes: { "A2 badge": ["badge"],',
+	'             "A2 heading": ["heading-light"] }',
+	'  style: { "A2 points": "display:flex; gap:16px;',
+	'           @media(--mobile){ flex-direction:column }" }',
+	'',
+	'✓ success · 24 V4 elements created',
+	'› playwright: screenshots 1440 / 768 / 375 … ok',
+];
+
+const ease = (x) => (x < 0 ? 0 : x > 1 ? 1 : x < 0.5 ? 2 * x * x : 1 - Math.pow(-2 * x + 2, 2) / 2);
+const clamp = (x) => Math.max(0, Math.min(1, x));
+const seg = (t, a, b) => clamp((t - a) / (b - a));
+
+function bg() {
+	const g = ctx.createLinearGradient(0, 0, W, H);
+	g.addColorStop(0, '#f7f5ff');
+	g.addColorStop(1, '#fff8ee');
+	ctx.fillStyle = g;
+	ctx.fillRect(0, 0, W, H);
+	const r1 = ctx.createRadialGradient(W * 0.85, H * 0.1, 0, W * 0.85, H * 0.1, 700);
+	r1.addColorStop(0, 'rgba(74,0,230,.16)');
+	r1.addColorStop(1, 'rgba(74,0,230,0)');
+	ctx.fillStyle = r1;
+	ctx.fillRect(0, 0, W, H);
+}
+function rrect(x, y, w, h, r) {
+	ctx.beginPath();
+	ctx.moveTo(x + r, y);
+	ctx.arcTo(x + w, y, x + w, y + h, r);
+	ctx.arcTo(x + w, y + h, x, y + h, r);
+	ctx.arcTo(x, y + h, x, y, r);
+	ctx.arcTo(x, y, x + w, y, r);
+	ctx.closePath();
+}
+// Browser window with an image scrolled to `scroll` (in image pixels), image scaled to the window width.
+function browser(x, y, w, h, img, scroll, url) {
+	ctx.save();
+	ctx.shadowColor = 'rgba(20,0,60,.18)';
+	ctx.shadowBlur = 60;
+	ctx.shadowOffsetY = 24;
+	rrect(x, y, w, h, 18);
+	ctx.fillStyle = '#fff';
+	ctx.fill();
+	ctx.restore();
+	ctx.save();
+	rrect(x, y, w, h, 18);
+	ctx.clip();
+	ctx.fillStyle = '#efeff3';
+	ctx.fillRect(x, y, w, 44);
+	['#ff6159', '#ffbd2e', '#28c941'].forEach((c, i) => {
+		ctx.fillStyle = c;
+		ctx.beginPath();
+		ctx.arc(x + 24 + i * 22, y + 22, 7, 0, Math.PI * 2);
+		ctx.fill();
+	});
+	ctx.fillStyle = '#fff';
+	rrect(x + 110, y + 10, w - 140, 24, 12);
+	ctx.fill();
+	ctx.fillStyle = '#888';
+	ctx.font = '600 15px Quicksand';
+	ctx.fillText(url, x + 126, y + 27);
+	const s = w / img.width;
+	const viewH = (h - 44) / s;
+	const sy = Math.max(0, Math.min(scroll, img.height - viewH));
+	ctx.drawImage(img, 0, sy, img.width, viewH, x, y + 44, w, h - 44);
+	ctx.restore();
+}
+function phone(x, y, w, img, scroll) {
+	const h = Math.round((w * 844) / 390);
+	ctx.save();
+	ctx.shadowColor = 'rgba(20,0,60,.3)';
+	ctx.shadowBlur = 50;
+	ctx.shadowOffsetY = 20;
+	rrect(x - 14, y - 14, w + 28, h + 28, 52);
+	ctx.fillStyle = '#111';
+	ctx.fill();
+	ctx.restore();
+	ctx.save();
+	rrect(x, y, w, h, 40);
+	ctx.clip();
+	const s = w / img.width;
+	const viewH = h / s;
+	const sy = Math.max(0, Math.min(scroll, img.height - viewH));
+	ctx.drawImage(img, 0, sy, img.width, viewH, x, y, w, h);
+	ctx.restore();
+}
+function label(step, text, alpha) {
+	ctx.globalAlpha = alpha;
+	ctx.fillStyle = '#4a00e6';
+	ctx.font = '700 26px Quicksand';
+	ctx.fillText(step, 96, 92);
+	ctx.fillStyle = '#2d2d2d';
+	ctx.font = '700 40px Quicksand';
+	ctx.fillText(text, 96, 142);
+	ctx.globalAlpha = 1;
+}
+function fadeAll(t, a, b) {
+	// Fade in over 0.5 s at a, fade out over 0.5 s before b.
+	return Math.min(clamp((t - a) / 0.5), clamp((b - t) / 0.5));
+}
+
+function draw(t) {
+	bg();
+	// 0–4.5 s: title
+	if (t < 4.5) {
+		const a = fadeAll(t, 0, 4.5);
+		ctx.globalAlpha = a;
+		ctx.fillStyle = '#6d6d6d';
+		ctx.font = '600 30px Quicksand';
+		ctx.fillText('Portfolio · WordPress + Elementor V4', 160, 400);
+		ctx.font = '700 84px Quicksand';
+		ctx.fillStyle = '#4a00e6';
+		ctx.fillText('Figma → WordPress', 160, 500);
+		ctx.fillStyle = '#2d2d2d';
+		ctx.fillText('with an AI-first workflow', 160, 600);
+		ctx.fillStyle = '#cc7f0c';
+		ctx.font = '700 34px Quicksand';
+		ctx.fillText('Claude Code · Figma MCP · Elementor MCP · Playwright', 160, 690);
+		ctx.globalAlpha = 1;
+		return;
+	}
+	// 4.5–13 s: the design
+	if (t < 13) {
+		const a = fadeAll(t, 4.5, 13);
+		ctx.globalAlpha = a;
+		label('1 · The design', 'Figma: General Website UI Kit (desktop only)', 1);
+		ctx.globalAlpha = a;
+		browser(96, 190, 1728, 840, IMG.figma, ease(seg(t, 5.5, 12.5)) * 3600, 'figma.com · General Website UI Kit by Sego (CC BY 4.0)');
+		ctx.globalAlpha = 1;
+		return;
+	}
+	// 13–24 s: the agent builds it
+	if (t < 24) {
+		const a = fadeAll(t, 13, 24);
+		ctx.globalAlpha = a;
+		label('2 · The agent builds it', 'Claude Code calls Elementor MCP: real V4 elements, not HTML', 1);
+		ctx.globalAlpha = a;
+		// code panel
+		ctx.save();
+		rrect(96, 200, 820, 820, 18);
+		ctx.fillStyle = '#1b1530';
+		ctx.fill();
+		ctx.clip();
+		const chars = Math.floor(seg(t, 13.6, 21) * CODE.join('\n').length);
+		let left = chars;
+		ctx.font = '500 22px "JetBrains Mono", monospace';
+		CODE.forEach((line, i) => {
+			if (left <= 0) return;
+			const part = line.slice(0, left);
+			left -= line.length + 1;
+			ctx.fillStyle = line.startsWith('✓') ? '#7ee0a1' : line.startsWith('›') ? '#fdb048' : '#e6e1ff';
+			ctx.fillText(part, 132, 260 + i * 50);
+		});
+		ctx.restore();
+		browser(960, 200, 864, 820, IMG.editor, 0, 'wp-admin · Elementor editor');
+		ctx.globalAlpha = 1;
+		return;
+	}
+	// 24–33 s: self-check against Figma (wipe)
+	if (t < 33) {
+		const a = fadeAll(t, 24, 33);
+		ctx.globalAlpha = a;
+		label('3 · Self-check', 'Compared with Figma at 1440 / 768 / 375 px before handover', 1);
+		ctx.globalAlpha = a;
+		const x = 96, y = 190, w = 1728, h = 840;
+		browser(x, y, w, h, IMG.siteTop, 0, 'figma ⟷ site');
+		// Figma over the left part, divider sweeps
+		const p = 0.15 + 0.7 * (0.5 - 0.5 * Math.cos(seg(t, 24.6, 32.4) * Math.PI * 2));
+		ctx.save();
+		rrect(x, y, w, h, 18);
+		ctx.clip();
+		ctx.beginPath();
+		ctx.rect(x, y + 44, w * p, h - 44);
+		ctx.clip();
+		const s = w / IMG.figma.width;
+		ctx.drawImage(IMG.figma, 0, 0, IMG.figma.width, (h - 44) / s, x, y + 44, w, h - 44);
+		ctx.restore();
+		ctx.fillStyle = '#4a00e6';
+		ctx.fillRect(x + w * p - 2, y + 44, 4, h - 44);
+		ctx.font = '700 22px Quicksand';
+		ctx.fillStyle = '#fff';
+		rrect(x + w * p - 120, y + 64, 100, 34, 17);
+		ctx.fillStyle = '#4a00e6';
+		ctx.fill();
+		ctx.fillStyle = '#fff';
+		ctx.fillText('Figma', x + w * p - 104, y + 88);
+		rrect(x + w * p + 20, y + 64, 80, 34, 17);
+		ctx.fillStyle = '#fdb048';
+		ctx.fill();
+		ctx.fillStyle = '#2d2d2d';
+		ctx.fillText('Site', x + w * p + 40, y + 88);
+		ctx.globalAlpha = 1;
+		return;
+	}
+	// 33–44 s: the result, desktop and phone scrolling together
+	if (t < 44) {
+		const a = fadeAll(t, 33, 44);
+		ctx.globalAlpha = a;
+		label('4 · The result', 'Responsive, English + German, blog — editable in Elementor', 1);
+		ctx.globalAlpha = a;
+		const k = ease(seg(t, 34, 43.5));
+		browser(96, 190, 1300, 840, IMG.homeFull, k * 6500, 'legite.demo / home');
+		phone(1480, 210, 360, IMG.homeMob, k * 16000);
+		ctx.globalAlpha = 1;
+		return;
+	}
+	// 44–49 s: end card
+	const a = fadeAll(t, 44, 49.6);
+	ctx.globalAlpha = a;
+	ctx.fillStyle = '#2d2d2d';
+	ctx.font = '700 64px Quicksand';
+	ctx.fillText('6 pages · 2 languages · blog', 160, 430);
+	ctx.fillStyle = '#4a00e6';
+	ctx.font = '700 44px Quicksand';
+	ctx.fillText('8 custom Elementor widgets · 55 global classes', 160, 510);
+	ctx.fillStyle = '#6d6d6d';
+	ctx.font = '600 30px Quicksand';
+	ctx.fillText('Every section checked on desktop, tablet and phone; decisions logged in git.', 160, 590);
+	ctx.font = '600 24px Quicksand';
+	ctx.fillText('Design: Sego (Figma Community, CC BY 4.0) · Development: Alexander S.', 160, 900);
+	ctx.globalAlpha = 1;
+}
+
+window.DURATION = 49.6;
+window.loadAll = () => Promise.all(Object.entries(SRC).map(([k, src]) => new Promise((res, rej) => { const i = new Image(); i.onload = () => { IMG[k] = i; res(); }; i.onerror = () => rej(new Error('image ' + src)); i.src = src; }))).then(() => Promise.all(['500 22px "JetBrains Mono"', '700 84px Quicksand', '600 30px Quicksand', '500 22px Quicksand'].map((f) => document.fonts.load(f)))).then(() => { draw(0); return 'ready'; });
+window.drawAt = (t) => draw(t);
+window.record = () => new Promise((resolve) => {
+	const stream = document.getElementById('c').captureStream(30);
+	const rec = new MediaRecorder(stream, { mimeType: 'video/mp4;codecs=avc1.640028', videoBitsPerSecond: 6_000_000 });
+	const chunks = [];
+	rec.ondataavailable = (e) => e.data.size && chunks.push(e.data);
+	rec.onstop = () => {
+		const blob = new Blob(chunks, { type: 'video/mp4' });
+		const a = document.createElement('a');
+		a.href = URL.createObjectURL(blob);
+		a.download = 'process.mp4';
+		document.body.append(a);
+		resolve(blob.size);
+		a.click();
+	};
+	const start = performance.now();
+	rec.start(1000);
+	const tick = () => {
+		const t = (performance.now() - start) / 1000;
+		draw(Math.min(t, window.DURATION));
+		if (t < window.DURATION) requestAnimationFrame(tick);
+		else setTimeout(() => rec.stop(), 300);
+	};
+	requestAnimationFrame(tick);
+});
+</script>
+</body>
+</html>

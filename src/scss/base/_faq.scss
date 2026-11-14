@@ -1,0 +1,21 @@
+// FAQ (Elementor class "faq-item" on the atomic accordion items, native <details>): the answer
+// slides open where the browser can animate to an "auto" height (interpolate-size and
+// ::details-content); elsewhere, and with reduced motion, it opens at once as before.
+
+@supports (interpolate-size: allow-keywords) {
+	@media (prefers-reduced-motion: no-preference) {
+		.elementor .faq-item {
+			interpolate-size: allow-keywords;
+
+			&::details-content {
+				height: 0;
+				overflow: clip;
+				transition: height 0.3s ease, content-visibility 0.3s allow-discrete;
+			}
+
+			&[open]::details-content {
+				height: auto;
+			}
+		}
+	}
+}

@@ -1,0 +1,42 @@
+{
+  "name": "figma-to-elementor-ai",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Hello Elementor child theme (ai-elem-child) and its asset pipeline",
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "browserslist": [
+    "defaults"
+  ],
+  "scripts": {
+    "dev": "gulp",
+    "build": "cross-env NODE_ENV=production gulp build",
+    "zip": "cross-env NODE_ENV=production gulp zip",
+    "wp:start": "docker compose up -d --wait",
+    "wp:stop": "docker compose stop",
+    "wp:setup": "docker compose exec cli site-setup.sh",
+    "wp:cli": "docker compose exec cli wp",
+    "wp:import": "docker compose exec cli wp aiec import --user=admin",
+    "wp:backup": "docker compose exec cli wp aiec backup",
+    "wp:restore": "docker compose exec cli wp aiec restore",
+    "wp:export": "docker compose exec cli wp aiec export --user=admin"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.6.1",
+    "browser-sync": "^3.0.4",
+    "cross-env": "^10.1.0",
+    "del": "^9.0.1",
+    "esbuild": "^0.28.2",
+    "gulp": "^5.0.1",
+    "gulp-postcss": "^10.0.0",
+    "gulp-sass": "^6.0.1",
+    "gulp-zip": "^6.1.0",
+    "opentype.js": "^1.3.4",
+    "postcss": "^8.5.30",
+    "sass": "^1.105.1",
+    "sharp": "^0.35.5",
+    "svgo": "^4.1.0"
+  }
+}

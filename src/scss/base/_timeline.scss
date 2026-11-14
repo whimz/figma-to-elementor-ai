@@ -1,0 +1,44 @@
+// Timeline (H8 "Why you Choose us"): Elementor class "timeline" on the track beside the points,
+// "timeline-dot" on the dot inside it (size, colour and glow are set in Elementor).
+// Here what V4 styles cannot express: the dashed line fading out, as long as the points are tall,
+// and the dot that rides the line while the page scrolls (as in the Figma prototype). Pure CSS:
+// the dot is sticky in the middle of the screen and stops at the end of the track. With reduced
+// motion it stays at the first point. Both work in the Elementor editor too.
+// The .elementor prefix outweighs Elementor's own class and element styles, loaded after ours.
+@use '../tools' as *;
+
+.elementor .timeline {
+	position: relative;
+
+	// Dashes 9.65 / gap 9.65 of the kit, starting with half a dash; purple fading to white.
+	&::before {
+		content: '';
+		position: absolute;
+		inset-block: 52px;
+		left: 50%;
+		width: 3.59px;
+		transform: translateX(-50%);
+		background: linear-gradient(180deg, var(--color-primary, #4a00e6) -18.6%, #fefefe 95%);
+		mask-image: repeating-linear-gradient(180deg, #000 0 4.83px, transparent 4.83px 14.48px, #000 14.48px 19.3px);
+	}
+}
+
+// ≤1200: the points are aligned to the top (Elementor), the dot starts higher, so does the line.
+@include down(tablet-extra) {
+	.elementor .timeline::before {
+		inset-block: 8px;
+	}
+}
+
+@include down(mobile) {
+	.elementor .timeline::before {
+		width: 3px;
+	}
+}
+
+@media (prefers-reduced-motion: no-preference) {
+	.elementor .timeline-dot {
+		position: sticky;
+		top: calc(50vh - 17px);
+	}
+}

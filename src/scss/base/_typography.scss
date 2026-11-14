@@ -1,0 +1,7 @@
+// Site font for everything outside Elementor's own typography: buttons, forms, theme markup.
+// The family is loaded by Elementor from the font-primary global variable.
+
+body {
+	font-family: var(--font-primary, 'Quicksand'), sans-serif;
+	color: var(--color-body, #5d5d5d);
+}

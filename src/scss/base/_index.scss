@@ -1,0 +1,21 @@
+// Base: site-wide rules that Elementor global styles cannot express.
+// Colors, typography and spacing live in Elementor Site Settings (global variables and classes),
+// so keep this layer small. Elementor V4 variables are available as CSS custom properties
+// named after their labels, e.g. var(--color-primary).
+
+@forward 'typography';
+@forward 'focus';
+@forward 'highlights';
+@forward 'scroll';
+@forward 'links';
+@forward 'site-footer';
+@forward 'logo-marquee';
+@forward 'slider-dots';
+@forward 'card-stack';
+@forward 'testimonials';
+@forward 'timeline';
+@forward 'card-outline';
+@forward 'price-feature';
+@forward 'faq';
+@forward 'video-player';
+@forward 'team-row';

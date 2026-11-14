@@ -1,0 +1,478 @@
+{
+    "name": "kit",
+    "title": "kit",
+    "description": "",
+    "author": "",
+    "version": "2.0",
+    "elementor_version": "4.4.0",
+    "thumbnail": false,
+    "site": "http://localhost:8888",
+    "experiments": [
+        "e_font_icon_svg",
+        "additional_custom_breakpoints",
+        "container",
+        "e_optimized_markup",
+        "e_optimized_css_files",
+        "hello-theme-header-footer",
+        "e_mcp_revision_snapshots",
+        "nested-elements",
+        "pages_panel",
+        "e_atomic_elements",
+        "e_icon_button",
+        "e_accordion",
+        "launchpad-checklist",
+        "e_page_audit",
+        "e_opt_in_v4",
+        "e_component_variants",
+        "e_angie_in_panels",
+        "markdown_rendering",
+        "e_assets_manager",
+        "import-export-customization",
+        "e_onboarding",
+        "in_editor_feedback",
+        "editor_events"
+    ],
+    "site-settings": [
+        "global-colors",
+        "global-typography",
+        "theme-style-typography",
+        "theme-style-buttons",
+        "theme-style-images",
+        "theme-style-form-fields",
+        "settings-background",
+        "settings-layout",
+        "settings-lightbox",
+        "settings-page-transitions",
+        "settings-custom-css",
+        "hello-settings-header",
+        "hello-settings-footer"
+    ],
+    "plugins": {
+        "contact-form-7/wp-contact-form-7.php": {
+            "name": "Contact Form 7",
+            "plugin": "contact-form-7/wp-contact-form-7.php",
+            "pluginUri": "https://contactform7.com/",
+            "version": "6.2.5"
+        },
+        "elementor/elementor.php": {
+            "name": "Elementor",
+            "plugin": "elementor/elementor.php",
+            "pluginUri": "https://elementor.com/?utm_source=wp-plugins&utm_campaign=plugin-uri&utm_medium=wp-dash",
+            "version": "4.4.0"
+        },
+        "polylang/polylang.php": {
+            "name": "Polylang",
+            "plugin": "polylang/polylang.php",
+            "pluginUri": "https://polylang.pro",
+            "version": "3.9.2"
+        },
+        "secure-custom-fields/secure-custom-fields.php": {
+            "name": "Secure Custom Fields",
+            "plugin": "secure-custom-fields/secure-custom-fields.php",
+            "pluginUri": "https://developer.wordpress.org/secure-custom-fields/",
+            "version": "6.9.8"
+        },
+        "wordpress-seo/wp-seo.php": {
+            "name": "Yoast SEO",
+            "plugin": "wordpress-seo/wp-seo.php",
+            "pluginUri": "https://yoa.st/1uj",
+            "version": "28.8"
+        }
+    },
+    "taxonomies": {
+        "post": [
+            "category",
+            "language",
+            "post_translations"
+        ],
+        "nav_menu_item": [
+            "nav_menu"
+        ],
+        "page": [
+            "language",
+            "post_translations"
+        ],
+        "aiec_part": [
+            "language",
+            "post_translations"
+        ]
+    },
+    "content": {
+        "post": [],
+        "page": {
+            "48": {
+                "title": "Home",
+                "excerpt": "",
+                "doc_type": "wp-page",
+                "thumbnail": false,
+                "url": "http://localhost:8888/",
+                "terms": [
+                    {
+                        "term_id": 5,
+                        "taxonomy": "language",
+                        "slug": "en"
+                    },
+                    {
+                        "term_id": 18,
+                        "taxonomy": "post_translations",
+                        "slug": "pll_6af3351e398cd"
+                    }
+                ],
+                "show_on_front": true
+            },
+            "49": {
+                "title": "Services",
+                "excerpt": "",
+                "doc_type": "wp-page",
+                "thumbnail": false,
+                "url": "http://localhost:8888/services/",
+                "terms": [
+                    {
+                        "term_id": 5,
+                        "taxonomy": "language",
+                        "slug": "en"
+                    },
+                    {
+                        "term_id": 12,
+                        "taxonomy": "post_translations",
+                        "slug": "pll_6af333ba3e7a1"
+                    }
+                ]
+            },
+            "50": {
+                "title": "Contact",
+                "excerpt": "",
+                "doc_type": "wp-page",
+                "thumbnail": false,
+                "url": "http://localhost:8888/contact/",
+                "terms": [
+                    {
+                        "term_id": 5,
+                        "taxonomy": "language",
+                        "slug": "en"
+                    },
+                    {
+                        "term_id": 13,
+                        "taxonomy": "post_translations",
+                        "slug": "pll_6af333bbe5a43"
+                    }
+                ]
+            },
+            "59": {
+                "title": "Style Guide (internal)",
+                "excerpt": "",
+                "doc_type": "wp-page",
+                "thumbnail": false,
+                "url": "http://localhost:8888/style-guide-internal/",
+                "terms": [
+                    {
+                        "term_id": 5,
+                        "taxonomy": "language",
+                        "slug": "en"
+                    }
+                ]
+            },
+            "227": {
+                "title": "Startseite",
+                "excerpt": "",
+                "doc_type": "wp-page",
+                "thumbnail": false,
+                "url": "http://localhost:8888/de/",
+                "terms": [
+                    {
+                        "term_id": 8,
+                        "taxonomy": "language",
+                        "slug": "de"
+                    },
+                    {
+                        "term_id": 18,
+                        "taxonomy": "post_translations",
+                        "slug": "pll_6af3351e398cd"
+                    }
+                ]
+            },
+            "230": {
+                "title": "Leistungen",
+                "excerpt": "",
+                "doc_type": "wp-page",
+                "thumbnail": false,
+                "url": "http://localhost:8888/de/leistungen/",
+                "terms": [
+                    {
+                        "term_id": 8,
+                        "taxonomy": "language",
+                        "slug": "de"
+                    },
+                    {
+                        "term_id": 12,
+                        "taxonomy": "post_translations",
+                        "slug": "pll_6af333ba3e7a1"
+                    }
+                ]
+            },
+            "233": {
+                "title": "Kontakt",
+                "excerpt": "",
+                "doc_type": "wp-page",
+                "thumbnail": false,
+                "url": "http://localhost:8888/de/kontakt/",
+                "terms": [
+                    {
+                        "term_id": 8,
+                        "taxonomy": "language",
+                        "slug": "de"
+                    },
+                    {
+                        "term_id": 13,
+                        "taxonomy": "post_translations",
+                        "slug": "pll_6af333bbe5a43"
+                    }
+                ]
+            },
+            "306": {
+                "title": "About Us",
+                "excerpt": "",
+                "doc_type": "wp-page",
+                "thumbnail": false,
+                "url": "http://localhost:8888/about-us/",
+                "terms": [
+                    {
+                        "term_id": 5,
+                        "taxonomy": "language",
+                        "slug": "en"
+                    },
+                    {
+                        "term_id": 20,
+                        "taxonomy": "post_translations",
+                        "slug": "pll_6af7991e15226"
+                    }
+                ]
+            },
+            "327": {
+                "title": "Über uns",
+                "excerpt": "",
+                "doc_type": "wp-page",
+                "thumbnail": false,
+                "url": "http://localhost:8888/de/ueber-uns/",
+                "terms": [
+                    {
+                        "term_id": 8,
+                        "taxonomy": "language",
+                        "slug": "de"
+                    },
+                    {
+                        "term_id": 20,
+                        "taxonomy": "post_translations",
+                        "slug": "pll_6af7991e15226"
+                    }
+                ]
+            }
+        },
+        "e-floating-buttons": [],
+        "aiec_part": {
+            "33": {
+                "title": "Header",
+                "excerpt": "",
+                "doc_type": "wp-post",
+                "thumbnail": false,
+                "url": "http://localhost:8888/?aiec_part=header",
+                "terms": [
+                    {
+                        "term_id": 5,
+                        "taxonomy": "language",
+                        "slug": "en"
+                    },
+                    {
+                        "term_id": 14,
+                        "taxonomy": "post_translations",
+                        "slug": "pll_6af333bd373f0"
+                    }
+                ]
+            },
+            "36": {
+                "title": "Footer",
+                "excerpt": "",
+                "doc_type": "wp-post",
+                "thumbnail": false,
+                "url": "http://localhost:8888/?aiec_part=footer",
+                "terms": [
+                    {
+                        "term_id": 5,
+                        "taxonomy": "language",
+                        "slug": "en"
+                    },
+                    {
+                        "term_id": 15,
+                        "taxonomy": "post_translations",
+                        "slug": "pll_6af333bd6b6b8"
+                    }
+                ]
+            },
+            "236": {
+                "title": "Header (DE)",
+                "excerpt": "",
+                "doc_type": "wp-post",
+                "thumbnail": false,
+                "url": "http://localhost:8888/de/?aiec_part=header-de",
+                "terms": [
+                    {
+                        "term_id": 8,
+                        "taxonomy": "language",
+                        "slug": "de"
+                    },
+                    {
+                        "term_id": 14,
+                        "taxonomy": "post_translations",
+                        "slug": "pll_6af333bd373f0"
+                    }
+                ]
+            },
+            "239": {
+                "title": "Footer (DE)",
+                "excerpt": "",
+                "doc_type": "wp-post",
+                "thumbnail": false,
+                "url": "http://localhost:8888/de/?aiec_part=footer-de",
+                "terms": [
+                    {
+                        "term_id": 8,
+                        "taxonomy": "language",
+                        "slug": "de"
+                    },
+                    {
+                        "term_id": 15,
+                        "taxonomy": "post_translations",
+                        "slug": "pll_6af333bd6b6b8"
+                    }
+                ]
+            },
+            "359": {
+                "title": "Blog archive",
+                "excerpt": "",
+                "doc_type": "wp-post",
+                "thumbnail": false,
+                "url": "http://localhost:8888/?aiec_part=blog-archive",
+                "terms": [
+                    {
+                        "term_id": 5,
+                        "taxonomy": "language",
+                        "slug": "en"
+                    },
+                    {
+                        "term_id": 43,
+                        "taxonomy": "post_translations",
+                        "slug": "pll_6af79f0d2802d"
+                    }
+                ]
+            },
+            "361": {
+                "title": "Blog post",
+                "excerpt": "",
+                "doc_type": "wp-post",
+                "thumbnail": false,
+                "url": "http://localhost:8888/?aiec_part=blog-post",
+                "terms": [
+                    {
+                        "term_id": 5,
+                        "taxonomy": "language",
+                        "slug": "en"
+                    },
+                    {
+                        "term_id": 44,
+                        "taxonomy": "post_translations",
+                        "slug": "pll_6af79f0ea353a"
+                    }
+                ]
+            },
+            "380": {
+                "title": "Blog archive (DE)",
+                "excerpt": "",
+                "doc_type": "wp-post",
+                "thumbnail": false,
+                "url": "http://localhost:8888/de/?aiec_part=blog-archive-de",
+                "terms": [
+                    {
+                        "term_id": 8,
+                        "taxonomy": "language",
+                        "slug": "de"
+                    },
+                    {
+                        "term_id": 43,
+                        "taxonomy": "post_translations",
+                        "slug": "pll_6af79f0d2802d"
+                    }
+                ]
+            },
+            "382": {
+                "title": "Blog post (DE)",
+                "excerpt": "",
+                "doc_type": "wp-post",
+                "thumbnail": false,
+                "url": "http://localhost:8888/de/?aiec_part=blog-post-de",
+                "terms": [
+                    {
+                        "term_id": 8,
+                        "taxonomy": "language",
+                        "slug": "de"
+                    },
+                    {
+                        "term_id": 44,
+                        "taxonomy": "post_translations",
+                        "slug": "pll_6af79f0ea353a"
+                    }
+                ]
+            }
+        }
+    },
+    "wp-content": {
+        "post": [
+            "357",
+            "358",
+            "355",
+            "356",
+            "353",
+            "354",
+            "351",
+            "352",
+            "349",
+            "350",
+            "347",
+            "348",
+            "345",
+            "346",
+            "343",
+            "344"
+        ],
+        "page": [
+            "341",
+            "342"
+        ],
+        "nav_menu_item": [
+            "54",
+            "58",
+            "56",
+            "76",
+            "242",
+            "244",
+            "246",
+            "247",
+            "250",
+            "251",
+            "309",
+            "330",
+            "374",
+            "375",
+            "376",
+            "377",
+            "378",
+            "379"
+        ],
+        "aiec_part": []
+    },
+    "custom-post-type-title": {
+        "aiec_part": {
+            "name": "aiec_part",
+            "label": "Site Parts"
+        }
+    }
+}

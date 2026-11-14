@@ -1,0 +1,18 @@
+// Outlined card (Elementor class "card--outline", H4, H9, prices): in the kit the border fades
+// from light lavender at the top left to the full primary at the bottom right — measured on H9:
+// 18% → 91% of the primary at about 126°. V4 styles have no gradient borders, so the border is a
+// second background layer under a white padding box; the class in Elementor keeps the plain 1 px
+// border, which is what shows if this file is missing.
+// Elementor prints the class as `.elementor .card--outline` in a file loaded after ours, so the
+// class is doubled here to outweigh its border colour.
+
+.elementor .card--outline.card--outline {
+	border-color: transparent;
+	background:
+		linear-gradient(var(--color-white, #fff) 0 0) padding-box,
+		linear-gradient(
+			126deg,
+			color-mix(in srgb, var(--color-primary, #4a00e6) 18%, transparent),
+			color-mix(in srgb, var(--color-primary, #4a00e6) 91%, transparent)
+		) border-box;
+}

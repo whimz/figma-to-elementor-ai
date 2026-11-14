@@ -1,0 +1,69 @@
+@use 'sass:map';
+@use 'breakpoints' as *;
+
+// Styles for the given device and smaller, e.g. @include down(tablet) { ... }
+@mixin down($device) {
+	@if not map.has-key($breakpoints, $device) {
+		@error 'Unknown breakpoint "#{$device}". Available: #{map.keys($breakpoints)}';
+	}
+
+	@media (max-width: map.get($breakpoints, $device)) {
+		@content;
+	}
+}
+
+// Styles above the given device, e.g. @include up(tablet) { ... } for desktop only.
+@mixin up($device) {
+	@if not map.has-key($breakpoints, $device) {
+		@error 'Unknown breakpoint "#{$device}". Available: #{map.keys($breakpoints)}';
+	}
+
+	@media (min-width: map.get($breakpoints, $device) + 1px) {
+		@content;
+	}
+}
+
+// Menu link with an underline that grows on hover (Nav Menu in the header, Menu List in the footer).
+@mixin menu-link {
+	position: relative;
+	display: inline-block;
+	padding: 0 12px 8px 4px;
+	font-size: 16px;
+	line-height: 24px;
+	white-space: nowrap;
+	color: var(--color-gray-900, #3d3d3d);
+	text-decoration: none;
+	transition: color 0.2s;
+
+	&::after {
+		content: '';
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 0;
+		height: 1px;
+		background-color: var(--color-placeholder, #888);
+		transition: width 0.25s ease;
+	}
+
+	&:hover {
+		color: var(--color-black, #0e0e0e);
+
+		&::after {
+			width: 100%;
+		}
+	}
+}
+
+// Hide visually but keep available to screen readers.
+@mixin visually-hidden {
+	position: absolute !important;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	white-space: nowrap;
+	border: 0;
+}

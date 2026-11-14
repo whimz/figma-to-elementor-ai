@@ -1,0 +1,147 @@
+// Contact Form 7, form "Contact" (C2): the classic Shortcode widget in Elementor has the class
+// "aiec-contact-form"; the field markup (.aiec-form__field with label, control and hint) is in the
+// form template in Contact > Contact Forms. Looks as in the kit: 12 px bold labels, 36 px fields
+// with a light border, 150 px message box, full-width primary button.
+
+.aiec-contact-form {
+	.wpcf7-form {
+		display: flex;
+		flex-direction: column;
+		gap: 11px;
+		margin: 0;
+	}
+
+	.aiec-form__field {
+		display: flex;
+		flex-direction: column;
+	}
+
+	label {
+		padding: 0 0 4px 4px;
+		font-size: 12px;
+		font-weight: 700;
+		line-height: 18px;
+		color: var(--color-heading, #2d2d2d);
+	}
+
+	.wpcf7-form-control-wrap {
+		display: block;
+	}
+
+	input:is([type='text'], [type='email']),
+	textarea {
+		display: block;
+		width: 100%;
+		margin: 0;
+		padding: 7px 16px;
+		border: 1px solid var(--color-field-border, #d1d1d1);
+		border-radius: 8px;
+		background-color: var(--color-white, #fff);
+		font-family: inherit;
+		font-size: 14px;
+		font-weight: 500;
+		line-height: 20px;
+		color: var(--color-text, #191919);
+		transition: border-color 0.2s;
+
+		&::placeholder {
+			color: var(--color-placeholder, #888);
+			opacity: 1;
+		}
+
+		&:hover {
+			border-color: var(--color-muted, #6d6d6d);
+		}
+
+		&:focus {
+			border-color: var(--color-primary, #4a00e6);
+		}
+	}
+
+	textarea {
+		height: 150px;
+		padding: 15px 16px;
+		resize: vertical;
+	}
+
+	.aiec-form__hint {
+		font-size: 11px;
+		line-height: 16px;
+		color: var(--color-placeholder, #888);
+	}
+
+	// Submit: the kit's primary button, full width, 9 px below the last hint (20 − the field gap).
+	.aiec-form__submit {
+		width: 100%;
+		margin-top: 9px;
+		padding: 12px 24px;
+		border: 0;
+		border-radius: 12px;
+		background-color: var(--color-primary, #4a00e6);
+		font-family: inherit;
+		font-size: 16px;
+		font-weight: 700;
+		line-height: 24px;
+		color: var(--color-white, #fff);
+		cursor: pointer;
+		transition: background-color 0.2s;
+
+		&:hover {
+			background-color: var(--color-primary-hover, #3b00b8);
+		}
+
+		&:disabled {
+			opacity: 0.6;
+			cursor: progress;
+		}
+	}
+
+	// CF7's spinner sits next to the button: the full-width button leaves it a line of its own,
+	// which it takes only while the form is being sent (hidden, it would still take the space).
+	.wpcf7-spinner {
+		display: none;
+		margin: 8px auto 0;
+	}
+
+	.wpcf7-form.submitting .wpcf7-spinner {
+		display: block;
+	}
+
+	// Validation: the palette has no red — errors use the darker orange (text) and orange (border).
+	.wpcf7-not-valid {
+		border-color: var(--color-secondary, #fdb048);
+	}
+
+	.wpcf7-not-valid-tip {
+		margin-top: 4px;
+		font-size: 12px;
+		line-height: 16px;
+		color: var(--color-secondary-text, #cc7f0c);
+	}
+
+	// The form status message: CF7's own rules (.wpcf7 form .wpcf7-response-output, with state
+	// colours) are more specific, hence the longer selectors.
+	.wpcf7 form .wpcf7-response-output {
+		margin: 4px 0 0;
+		padding: 12px 16px;
+		border: 1px solid var(--color-secondary, #fdb048);
+		border-radius: 8px;
+		font-size: 14px;
+		line-height: 20px;
+		color: var(--color-text, #191919);
+	}
+
+	.wpcf7 form.sent .wpcf7-response-output {
+		border-color: var(--color-primary, #4a00e6);
+	}
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.aiec-contact-form {
+		input,
+		textarea,
+		.aiec-form__submit {
+			transition: none;
+		}
+	}
+}

@@ -1,0 +1,22 @@
+<div class="aiec-form__field">
+	<label for="aiec-name">Name</label>
+	[text* your-name id:aiec-name autocomplete:name placeholder "Write your full name"]
+	<span class="aiec-form__hint">e.g. John Phipes</span>
+</div>
+<div class="aiec-form__field">
+	<label for="aiec-email">Email</label>
+	[email* your-email id:aiec-email autocomplete:email placeholder "example@email.com"]
+	<span class="aiec-form__hint">We will reply to this address</span>
+</div>
+<div class="aiec-form__field">
+	<label for="aiec-subject">Headline</label>
+	[text your-subject id:aiec-subject placeholder "What you are looking for"]
+	<span class="aiec-form__hint">e.g. Tax services</span>
+</div>
+<div class="aiec-form__field">
+	<label for="aiec-message">Message</label>
+	[textarea* your-message id:aiec-message maxlength:1000 placeholder "How could we help you?"]
+	<span class="aiec-form__hint">Up to 1000 characters</span>
+</div>
+[submit class:aiec-form__submit "Contact Us"]
+

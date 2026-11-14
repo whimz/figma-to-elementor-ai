@@ -1,0 +1,12 @@
+# WP-CLI defaults inside the cli container (mounted as WP_CLI_CONFIG_PATH).
+
+# Site URL for CLI requests: without it WordPress guesses the URL from HTTP_HOST, which CLI does not have.
+url: http://localhost:8888
+
+# Apache in the wordpress container has mod_rewrite, so `wp rewrite flush --hard` may write .htaccess.
+apache_modules:
+  - mod_rewrite
+
+# Project commands: `wp aiec import`, `wp aiec backup`, `wp aiec restore` (npm run wp:import / wp:backup / wp:restore).
+require:
+  - /usr/local/share/aiec/wp-cli-commands.php

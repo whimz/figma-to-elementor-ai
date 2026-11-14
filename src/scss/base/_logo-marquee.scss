@@ -1,0 +1,54 @@
+// Logo strip as a ticker on phones: Elementor class "logo-marquee" on the wrapper, behaviour in
+// src/js/modules/logo-marquee.js. The wrapper clips and fades the edges; the row inside moves by
+// half its width — exactly one set of logos — so the loop is seamless. Spacing is a margin on
+// every logo (not gap), otherwise half the row would be half a gap short.
+// The .elementor prefix outweighs Elementor's own class and element styles, loaded after ours.
+@use '../tools' as *;
+
+.elementor .logo-marquee .logo-marquee__clone {
+	display: none;
+}
+
+@include down(mobile) {
+	.elementor .logo-marquee.is-running {
+		justify-content: flex-start;
+		overflow: hidden;
+		mask-image: linear-gradient(90deg, transparent, #000 12%, #000 88%, transparent);
+
+		> .e-con {
+			flex: 0 0 auto; // The wrapper is a flex row too: without this the row shrinks to the screen.
+			flex-wrap: nowrap;
+			justify-content: flex-start;
+			gap: 0;
+			width: max-content;
+			max-width: none; // The row is limited to three logos per line on tablets (Elementor).
+			animation: aiec-marquee var(--aiec-marquee-duration, 24s) linear infinite;
+		}
+
+		> .e-con > * {
+			flex: 0 0 auto;
+			margin-right: 32px;
+		}
+
+		.logo-marquee__clone {
+			display: block;
+		}
+	}
+
+	.elementor .logo-marquee.is-paused > .e-con {
+		animation-play-state: paused;
+	}
+
+	// Mouse users: pause while pointing at a logo. Not on touch screens, where hover sticks after a tap.
+	@media (hover: hover) {
+		.elementor .logo-marquee.is-running:hover > .e-con {
+			animation-play-state: paused;
+		}
+	}
+}
+
+@keyframes aiec-marquee {
+	to {
+		transform: translateX(-50%);
+	}
+}

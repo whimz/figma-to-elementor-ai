@@ -1,0 +1,49 @@
+// Dots under a swipe slider, created by src/js/modules/slider-dots.js. Each component decides
+// when its dots show (display on its own class), these are only the looks.
+
+.slider-dots {
+	justify-content: center;
+	gap: 4px;
+}
+
+// 24px touch target, 10px dot.
+.slider-dots__dot {
+	position: relative;
+	width: 24px;
+	height: 24px;
+	padding: 0;
+	border: 0;
+	background: none;
+	cursor: pointer;
+
+	&::before {
+		content: '';
+		position: absolute;
+		inset: 7px;
+		border-radius: 50%;
+		background-color: var(--color-field-border, #d1d1d1);
+		transition: background-color 0.2s, transform 0.2s;
+	}
+
+	&[aria-current='true']::before {
+		background-color: var(--color-primary, #4a00e6);
+		transform: scale(1.2);
+	}
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.slider-dots__dot::before {
+		transition: none;
+	}
+}
+
+// On the purple background (Elementor class bg-primary): light dots, the current one white.
+.bg-primary .slider-dots__dot {
+	&::before {
+		background-color: rgb(255 255 255 / 40%);
+	}
+
+	&[aria-current='true']::before {
+		background-color: var(--color-white, #fff);
+	}
+}

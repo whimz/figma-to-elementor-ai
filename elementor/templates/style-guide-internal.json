@@ -1,0 +1,3058 @@
+{
+    "title": "Style Guide (internal)",
+    "type": "page",
+    "version": "0.4",
+    "page_settings": {
+        "template": "default"
+    },
+    "content": [
+        {
+            "id": "490f3da4",
+            "elType": "e-flexbox",
+            "settings": {
+                "classes": {
+                    "$$type": "classes",
+                    "value": [
+                        "g-515d564"
+                    ]
+                },
+                "tag": {
+                    "$$type": "string",
+                    "value": "section"
+                }
+            },
+            "elements": [
+                {
+                    "id": "41f271aa",
+                    "elType": "e-flexbox",
+                    "settings": {
+                        "classes": {
+                            "$$type": "classes",
+                            "value": [
+                                "g-bfbe280",
+                                "e-618580dd-a737"
+                            ]
+                        }
+                    },
+                    "elements": [
+                        {
+                            "id": "79ef4100",
+                            "elType": "widget",
+                            "settings": {
+                                "classes": {
+                                    "$$type": "classes",
+                                    "value": [
+                                        "g-1eefe63"
+                                    ]
+                                },
+                                "paragraph": {
+                                    "$$type": "escaped-html",
+                                    "value": "Typography"
+                                }
+                            },
+                            "elements": [],
+                            "widgetType": "e-paragraph",
+                            "editor_settings": {
+                                "title": "SG Typography badge"
+                            },
+                            "version": "0.0"
+                        },
+                        {
+                            "id": "514d6883",
+                            "elType": "widget",
+                            "settings": {
+                                "tag": {
+                                    "$$type": "string",
+                                    "value": "h1"
+                                },
+                                "title": {
+                                    "$$type": "escaped-html",
+                                    "value": "Simplify Your <strong>Crypto Taxes</strong> with <em>Our Expertise</em>"
+                                }
+                            },
+                            "elements": [],
+                            "widgetType": "e-heading",
+                            "editor_settings": {
+                                "title": "SG H1"
+                            },
+                            "version": "0.0"
+                        },
+                        {
+                            "id": "5686666d",
+                            "elType": "widget",
+                            "settings": {
+                                "classes": {
+                                    "$$type": "classes",
+                                    "value": [
+                                        "g-d6fb152"
+                                    ]
+                                },
+                                "paragraph": {
+                                    "$$type": "escaped-html",
+                                    "value": "We specialize in cryptocurrency tax services, providing up-to-date legal and tax information along with access to vetted tax accountants."
+                                }
+                            },
+                            "elements": [],
+                            "widgetType": "e-paragraph",
+                            "editor_settings": {
+                                "title": "SG Lead"
+                            },
+                            "version": "0.0"
+                        },
+                        {
+                            "id": "4e34d48e",
+                            "elType": "widget",
+                            "settings": {
+                                "tag": {
+                                    "$$type": "string",
+                                    "value": "h2"
+                                },
+                                "title": {
+                                    "$$type": "escaped-html",
+                                    "value": "What Our Clients Are Saying"
+                                }
+                            },
+                            "elements": [],
+                            "widgetType": "e-heading",
+                            "editor_settings": {
+                                "title": "SG H2"
+                            },
+                            "version": "0.0"
+                        },
+                        {
+                            "id": "5c29b643",
+                            "elType": "widget",
+                            "settings": {
+                                "classes": {
+                                    "$$type": "classes",
+                                    "value": [
+                                        "g-2559bed"
+                                    ]
+                                },
+                                "tag": {
+                                    "$$type": "string",
+                                    "value": "h2"
+                                },
+                                "title": {
+                                    "$$type": "escaped-html",
+                                    "value": "Applications That Drive <b>Smarter Decisions</b> ✨"
+                                }
+                            },
+                            "elements": [],
+                            "widgetType": "e-heading",
+                            "editor_settings": {
+                                "title": "SG H2 light"
+                            },
+                            "version": "0.0"
+                        },
+                        {
+                            "id": "2913f2d2",
+                            "elType": "widget",
+                            "settings": {
+                                "tag": {
+                                    "$$type": "string",
+                                    "value": "h3"
+                                },
+                                "title": {
+                                    "$$type": "escaped-html",
+                                    "value": "Lorem ipsum mattis auctor a scelerisque"
+                                }
+                            },
+                            "elements": [],
+                            "widgetType": "e-heading",
+                            "editor_settings": {
+                                "title": "SG H3"
+                            },
+                            "version": "0.0"
+                        },
+                        {
+                            "id": "5e442d74",
+                            "elType": "widget",
+                            "settings": {
+                                "tag": {
+                                    "$$type": "string",
+                                    "value": "h4"
+                                },
+                                "title": {
+                                    "$$type": "escaped-html",
+                                    "value": "Trend Prediction"
+                                }
+                            },
+                            "elements": [],
+                            "widgetType": "e-heading",
+                            "editor_settings": {
+                                "title": "SG H4"
+                            },
+                            "version": "0.0"
+                        },
+                        {
+                            "id": "75a3e442",
+                            "elType": "widget",
+                            "settings": {
+                                "classes": {
+                                    "$$type": "classes",
+                                    "value": [
+                                        "g-67b2c69"
+                                    ]
+                                },
+                                "paragraph": {
+                                    "$$type": "escaped-html",
+                                    "value": "Text XL 20/28 — card text. Lorem ipsum dolor sit amet consectetur."
+                                }
+                            },
+                            "elements": [],
+                            "widgetType": "e-paragraph",
+                            "editor_settings": {
+                                "title": "SG Text XL"
+                            },
+                            "version": "0.0"
+                        },
+                        {
+                            "id": "2b6861",
+                            "elType": "widget",
+                            "settings": {
+                                "paragraph": {
+                                    "$$type": "escaped-html",
+                                    "value": "Body 16/24 — Lorem ipsum dolor sit amet consectetur. Pharetra sed pharetra eu facilisis hendrerit arcu dictum sed semper."
+                                }
+                            },
+                            "elements": [],
+                            "widgetType": "e-paragraph",
+                            "editor_settings": {
+                                "title": "SG Body"
+                            },
+                            "version": "0.0"
+                        },
+                        {
+                            "id": "26db2e52",
+                            "elType": "widget",
+                            "settings": {
+                                "classes": {
+                                    "$$type": "classes",
+                                    "value": [
+                                        "g-902a70f"
+                                    ]
+                                },
+                                "paragraph": {
+                                    "$$type": "escaped-html",
+                                    "value": "Muted 16/24 — secondary text in white cards."
+                                }
+                            },
+                            "elements": [],
+                            "widgetType": "e-paragraph",
+                            "editor_settings": {
+                                "title": "SG Muted"
+                            },
+                            "version": "0.0"
+                        },
+                        {
+                            "id": "e884fea",
+                            "elType": "widget",
+                            "settings": {
+                                "tag": {
+                                    "$$type": "string",
+                                    "value": "h3"
+                                },
+                                "title": {
+                                    "$$type": "escaped-html",
+                                    "value": "Highlights: <strong>strong = purple</strong> · <em>em = orange</em> · <b>b = plain bold</b>"
+                                }
+                            },
+                            "elements": [],
+                            "widgetType": "e-heading",
+                            "editor_settings": {
+                                "title": "SG Markup test"
+                            },
+                            "version": "0.0"
+                        }
+                    ],
+                    "isInner": false,
+                    "styles": {
+                        "e-618580dd-a737": {
+                            "id": "e-618580dd-a737",
+                            "label": "local",
+                            "type": "class",
+                            "variants": [
+                                {
+                                    "meta": {
+                                        "breakpoint": "desktop",
+                                        "state": null
+                                    },
+                                    "props": {
+                                        "gap": {
+                                            "$$type": "size",
+                                            "value": {
+                                                "size": 24,
+                                                "unit": "px"
+                                            }
+                                        },
+                                        "align-items": {
+                                            "$$type": "string",
+                                            "value": "flex-start"
+                                        }
+                                    },
+                                    "custom_css": null
+                                }
+                            ]
+                        }
+                    },
+                    "editor_settings": {
+                        "title": "SG Typography container"
+                    },
+                    "version": "0.0"
+                }
+            ],
+            "isInner": false,
+            "editor_settings": {
+                "title": "SG Typography"
+            },
+            "version": "0.0"
+        },
+        {
+            "id": "55551105",
+            "elType": "e-flexbox",
+            "settings": {
+                "classes": {
+                    "$$type": "classes",
+                    "value": [
+                        "g-515d564"
+                    ]
+                },
+                "tag": {
+                    "$$type": "string",
+                    "value": "section"
+                }
+            },
+            "elements": [
+                {
+                    "id": "2a5be269",
+                    "elType": "e-flexbox",
+                    "settings": {
+                        "classes": {
+                            "$$type": "classes",
+                            "value": [
+                                "g-bfbe280",
+                                "e-310c8dd6-f0b1"
+                            ]
+                        }
+                    },
+                    "elements": [
+                        {
+                            "id": "18454dbe",
+                            "elType": "widget",
+                            "settings": {
+                                "classes": {
+                                    "$$type": "classes",
+                                    "value": [
+                                        "g-1eefe63"
+                                    ]
+                                },
+                                "paragraph": {
+                                    "$$type": "escaped-html",
+                                    "value": "Colors"
+                                }
+                            },
+                            "elements": [],
+                            "widgetType": "e-paragraph",
+                            "editor_settings": {
+                                "title": "SG Colors badge"
+                            },
+                            "version": "0.0"
+                        },
+                        {
+                            "id": "2807fb81",
+                            "elType": "e-grid",
+                            "settings": {
+                                "classes": {
+                                    "$$type": "classes",
+                                    "value": [
+                                        "e-479d36da-c0fa"
+                                    ]
+                                }
+                            },
+                            "elements": [
+                                {
+                                    "id": "718d4708",
+                                    "elType": "e-div-block",
+                                    "elements": [
+                                        {
+                                            "id": "798be3ab",
+                                            "elType": "e-div-block",
+                                            "settings": {
+                                                "classes": {
+                                                    "$$type": "classes",
+                                                    "value": [
+                                                        "e-619bd46a-cd44"
+                                                    ]
+                                                }
+                                            },
+                                            "elements": [],
+                                            "isInner": false,
+                                            "styles": {
+                                                "e-619bd46a-cd44": {
+                                                    "id": "e-619bd46a-cd44",
+                                                    "label": "local",
+                                                    "type": "class",
+                                                    "variants": [
+                                                        {
+                                                            "meta": {
+                                                                "breakpoint": "desktop",
+                                                                "state": null
+                                                            },
+                                                            "props": {
+                                                                "height": {
+                                                                    "$$type": "size",
+                                                                    "value": {
+                                                                        "size": 72,
+                                                                        "unit": "px"
+                                                                    }
+                                                                },
+                                                                "border-radius": {
+                                                                    "$$type": "size",
+                                                                    "value": {
+                                                                        "size": 12,
+                                                                        "unit": "px"
+                                                                    }
+                                                                },
+                                                                "background": {
+                                                                    "$$type": "background",
+                                                                    "value": {
+                                                                        "color": {
+                                                                            "$$type": "global-color-variable",
+                                                                            "value": "e-gv-d1ee2b8"
+                                                                        }
+                                                                    }
+                                                                }
+                                                            },
+                                                            "custom_css": null
+                                                        }
+                                                    ]
+                                                }
+                                            },
+                                            "editor_settings": {
+                                                "title": "Sw primary chip"
+                                            },
+                                            "version": "0.0"
+                                        },
+                                        {
+                                            "id": "676c4b1d",
+                                            "elType": "widget",
+                                            "settings": {
+                                                "classes": {
+                                                    "$$type": "classes",
+                                                    "value": [
+                                                        "e-8543ff3-d142"
+                                                    ]
+                                                },
+                                                "paragraph": {
+                                                    "$$type": "escaped-html",
+                                                    "value": "color-primary #4a00e6"
+                                                }
+                                            },
+                                            "elements": [],
+                                            "widgetType": "e-paragraph",
+                                            "styles": {
+                                                "e-8543ff3-d142": {
+                                                    "id": "e-8543ff3-d142",
+                                                    "label": "local",
+                                                    "type": "class",
+                                                    "variants": [
+                                                        {
+                                                            "meta": {
+                                                                "breakpoint": "desktop",
+                                                                "state": null
+                                                            },
+                                                            "props": {
+                                                                "font-size": {
+                                                                    "$$type": "size",
+                                                                    "value": {
+                                                                        "size": 14,
+                                                                        "unit": "px"
+                                                                    }
+                                                                },
+                                                                "line-height": {
+                                                                    "$$type": "size",
+                                                                    "value": {
+                                                                        "size": 20,
+                                                                        "unit": "px"
+                                                                    }
+                                                                },
+                                                                "margin": {
+                                                                    "$$type": "dimensions",
+                                                                    "value": {
+                                                                        "block-start": {
+                                                                            "$$type": "size",
+                                                                            "value": {
+                                                                                "size": 8,
+                                                                                "unit": "px"
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                }
+                                                            },
+                                                            "custom_css": null
+                                                        }
+                                                    ]
+                                                }
+                                            },
+                                            "editor_settings": {
+                                                "title": "Sw primary label"
+                                            },
+                                            "version": "0.0"
+                                        }
+                                    ],
+                                    "isInner": false,
+                                    "editor_settings": {
+                                        "title": "Sw primary"
+                                    },
+                                    "version": "0.0"
+                                },
+                                {
+                                    "id": "7a242cde",
+                                    "elType": "e-div-block",
+                                    "elements": [
+                                        {
+                                            "id": "508ccc09",
+                                            "elType": "e-div-block",
+                                            "settings": {
+                                                "classes": {
+                                                    "$$type": "classes",
+                                                    "value": [
+                                                        "e-7348a100-e94f"
+                                                    ]
+                                                }
+                                            },
+                                            "elements": [],
+                                            "isInner": false,
+                                            "styles": {
+                                                "e-7348a100-e94f": {
+                                                    "id": "e-7348a100-e94f",
+                                                    "label": "local",
+                                                    "type": "class",
+                                                    "variants": [
+                                                        {
+                                                            "meta": {
+                                                                "breakpoint": "desktop",
+                                                                "state": null
+                                                            },
+                                                            "props": {
+                                                                "height": {
+                                                                    "$$type": "size",
+                                                                    "value": {
+                                                                        "size": 72,
+                                                                        "unit": "px"
+                                                                    }
+                                                                },
+                                                                "border-radius": {
+                                                                    "$$type": "size",
+                                                                    "value": {
+                                                                        "size": 12,
+                                                                        "unit": "px"
+                                                                    }
+                                                                },
+                                                                "background": {
+                                                                    "$$type": "background",
+                                                                    "value": {
+                                                                        "color": {
+                                                                            "$$type": "global-color-variable",
+                                                                            "value": "e-gv-792399d"
+                                                                        }
+                                                                    }
+                                                                }
+                                                            },
+                                                            "custom_css": null
+                                                        }
+                                                    ]
+                                                }
+                                            },
+                                            "editor_settings": {
+                                                "title": "Sw primary-hover chip"
+                                            },
+                                            "version": "0.0"
+                                        },
+                                        {
+                                            "id": "258bc793",
+                                            "elType": "widget",
+                                            "settings": {
+                                                "classes": {
+                                                    "$$type": "classes",
+                                                    "value": [
+                                                        "e-73322d73-5e94"
+                                                    ]
+                                                },
+                                                "paragraph": {
+                                                    "$$type": "escaped-html",
+                                                    "value": "color-primary-hover #3b00b8"
+                                                }
+                                            },
+                                            "elements": [],
+                                            "widgetType": "e-paragraph",
+                                            "styles": {
+                                                "e-73322d73-5e94": {
+                                                    "id": "e-73322d73-5e94",
+                                                    "label": "local",
+                                                    "type": "class",
+                                                    "variants": [
+                                                        {
+                                                            "meta": {
+                                                                "breakpoint": "desktop",
+                                                                "state": null
+                                                            },
+                                                            "props": {
+                                                                "font-size": {
+                                                                    "$$type": "size",
+                                                                    "value": {
+                                                                        "size": 14,
+                                                                        "unit": "px"
+                                                                    }
+                                                                },
+                                                                "line-height": {
+                                                                    "$$type": "size",
+                                                                    "value": {
+                                                                        "size": 20,
+                                                                        "unit": "px"
+                                                                    }
+                                                                },
+                                                                "margin": {
+                                                                    "$$type": "dimensions",
+                                                                    "value": {
+                                                                        "block-start": {
+                                                                            "$$type": "size",
+                                                                            "value": {
+                                                                                "size": 8,
+                                                                                "unit": "px"
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                }
+                                                            },
+                                                            "custom_css": null
+                                                        }
+                                                    ]
+                                                }
+                                            },
+                                            "editor_settings": {
+                                                "title": "Sw primary-hover label"
+                                            },
+                                            "version": "0.0"
+                                        }
+                                    ],
+                                    "isInner": false,
+                                    "editor_settings": {
+                                        "title": "Sw primary-hover"
+                                    },
+                                    "version": "0.0"
+                                },
+                                {
+                                    "id": "13965c94",
+                                    "elType": "e-div-block",
+                                    "elements": [
+                                        {
+                                            "id": "21b28278",
+                                            "elType": "e-div-block",
+                                            "settings": {
+                                                "classes": {
+                                                    "$$type": "classes",
+                                                    "value": [
+                                                        "e-44b4c45a-c900"
+                                                    ]
+                                                }
+                                            },
+                                            "elements": [],
+                                            "isInner": false,
+                                            "styles": {
+                                                "e-44b4c45a-c900": {
+                                                    "id": "e-44b4c45a-c900",
+                                                    "label": "local",
+                                                    "type": "class",
+                                                    "variants": [
+                                                        {
+                                                            "meta": {
+                                                                "breakpoint": "desktop",
+                                                                "state": null
+                                                            },
+                                                            "props": {
+                                                                "height": {
+                                                                    "$$type": "size",
+                                                                    "value": {
+                                                                        "size": 72,
+                                                                        "unit": "px"
+                                                                    }
+                                                                },
+                                                                "border-radius": {
+                                                                    "$$type": "size",
+                                                                    "value": {
+                                                                        "size": 12,
+                                                                        "unit": "px"
+                                                                    }
+                                                                },
+                                                                "background": {
+                                                                    "$$type": "background",
+                                                                    "value": {
+                                                                        "color": {
+                                                                            "$$type": "global-color-variable",
+                                                                            "value": "e-gv-24231e2"
+                                                                        }
+                                                                    }
+                                                                }
+                                                            },
+                                                            "custom_css": null
+                                                        }
+                                                    ]
+                                                }
+                                            },
+                                            "editor_settings": {
+                                                "title": "Sw secondary chip"
+                                            },
+                                            "version": "0.0"
+                                        },
+                                        {
+                                            "id": "38f86a38",
+                                            "elType": "widget",
+                                            "settings": {
+                                                "classes": {
+                                                    "$$type": "classes",
+                                                    "value": [
+                                                        "e-6878d906-62d5"
+                                                    ]
+                                                },
+                                                "paragraph": {
+                                                    "$$type": "escaped-html",
+                                                    "value": "color-secondary #fdb048"
+                                                }
+                                            },
+                                            "elements": [],
+                                            "widgetType": "e-paragraph",
+                                            "styles": {
+                                                "e-6878d906-62d5": {
+                                                    "id": "e-6878d906-62d5",
+                                                    "label": "local",
+                                                    "type": "class",
+                                                    "variants": [
+                                                        {
+                                                            "meta": {
+                                                                "breakpoint": "desktop",
+                                                                "state": null
+                                                            },
+                                                            "props": {
+                                                                "font-size": {
+                                                                    "$$type": "size",
+                                                                    "value": {
+                                                                        "size": 14,
+                                                                        "unit": "px"
+                                                                    }
+                                                                },
+                                                                "line-height": {
+                                                                    "$$type": "size",
+                                                                    "value": {
+                                                                        "size": 20,
+                                                                        "unit": "px"
+                                                                    }
+                                                                },
+                                                                "margin": {
+                                                                    "$$type": "dimensions",
+                                                                    "value": {
+                                                                        "block-start": {
+                                                                            "$$type": "size",
+                                                                            "value": {
+                                                                                "size": 8,
+                                                                                "unit": "px"
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                }
+                                                            },
+                                                            "custom_css": null
+                                                        }
+                                                    ]
+                                                }
+                                            },
+                                            "editor_settings": {
+                                                "title": "Sw secondary label"
+                                            },
+                                            "version": "0.0"
+                                        }
+                                    ],
+                                    "isInner": false,
+                                    "editor_settings": {
+                                        "title": "Sw secondary"
+                                    },
+                                    "version": "0.0"
+                                },
+                                {
+                                    "id": "725ec18b",
+                                    "elType": "e-div-block",
+                                    "elements": [
+                                        {
+                                            "id": "7b7eeea6",
+                                            "elType": "e-div-block",
+                                            "settings": {
+                                                "classes": {
+                                                    "$$type": "classes",
+                                                    "value": [
+                                                        "e-88be8a4-221d"
+                                                    ]
+                                                }
+                                            },
+                                            "elements": [],
+                                            "isInner": false,
+                                            "styles": {
+                                                "e-88be8a4-221d": {
+                                                    "id": "e-88be8a4-221d",
+                                                    "label": "local",
+                                                    "type": "class",
+                                                    "variants": [
+                                                        {
+                                                            "meta": {
+                                                                "breakpoint": "desktop",
+                                                                "state": null
+                                                            },
+                                                            "props": {
+                                                                "height": {
+                                                                    "$$type": "size",
+                                                                    "value": {
+                                                                        "size": 72,
+                                                                        "unit": "px"
+                                                                    }
+                                                                },
+                                                                "border-radius": {
+                                                                    "$$type": "size",
+                                                                    "value": {
+                                                                        "size": 12,
+                                                                        "unit": "px"
+                                                                    }
+                                                                },
+                                                                "background": {
+                                                                    "$$type": "background",
+                                                                    "value": {
+                                                                        "color": {
+                                                                            "$$type": "global-color-variable",
+                                                                            "value": "e-gv-00ffdec"
+                                                                        }
+                                                                    }
+                                                                }
+                                                            },
+                                                            "custom_css": null
+                                                        }
+                                                    ]
+                                                }
+                                            },
+                                            "editor_settings": {
+                                                "title": "Sw secondary-text chip"
+                                            },
+                                            "version": "0.0"
+                                        },
+                                        {
+                                            "id": "46f33ab1",
+                                            "elType": "widget",
+                                            "settings": {
+                                                "classes": {
+                                                    "$$type": "classes",
+                                                    "value": [
+                                                        "e-7ed6367-1e9e"
+                                                    ]
+                                                },
+                                                "paragraph": {
+                                                    "$$type": "escaped-html",
+                                                    "value": "color-secondary-text #cc7f0c"
+                                                }
+                                            },
+                                            "elements": [],
+                                            "widgetType": "e-paragraph",
+                                            "styles": {
+                                                "e-7ed6367-1e9e": {
+                                                    "id": "e-7ed6367-1e9e",
+                                                    "label": "local",
+                                                    "type": "class",
+                                                    "variants": [
+                                                        {
+                                                            "meta": {
+                                                                "breakpoint": "desktop",
+                                                                "state": null
+                                                            },
+                                                            "props": {
+                                                                "font-size": {
+                                                                    "$$type": "size",
+                                                                    "value": {
+                                                                        "size": 14,
+                                                                        "unit": "px"
+                                                                    }
+                                                                },
+                                                                "line-height": {
+                                                                    "$$type": "size",
+                                                                    "value": {
+                                                                        "size": 20,
+                                                                        "unit": "px"
+                                                                    }
+                                                                },
+                                                                "margin": {
+                                                                    "$$type": "dimensions",
+                                                                    "value": {
+                                                                        "block-start": {
+                                                                            "$$type": "size",
+                                                                            "value": {
+                                                                                "size": 8,
+                                                                                "unit": "px"
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                }
+                                                            },
+                                                            "custom_css": null
+                                                        }
+                                                    ]
+                                                }
+                                            },
+                                            "editor_settings": {
+                                                "title": "Sw secondary-text label"
+                                            },
+                                            "version": "0.0"
+                                        }
+                                    ],
+                                    "isInner": false,
+                                    "editor_settings": {
+                                        "title": "Sw secondary-text"
+                                    },
+                                    "version": "0.0"
+                                },
+                                {
+                                    "id": "6183a4e4",
+                                    "elType": "e-div-block",
+                                    "elements": [
+                                        {
+                                            "id": "510a6021",
+                                            "elType": "e-div-block",
+                                            "settings": {
+                                                "classes": {
+                                                    "$$type": "classes",
+                                                    "value": [
+                                                        "e-52e32848-5116"
+                                                    ]
+                                                }
+                                            },
+                                            "elements": [],
+                                            "isInner": false,
+                                            "styles": {
+                                                "e-52e32848-5116": {
+                                                    "id": "e-52e32848-5116",
+                                                    "label": "local",
+                                                    "type": "class",
+                                                    "variants": [
+                                                        {
+                                                            "meta": {
+                                                                "breakpoint": "desktop",
+                                                                "state": null
+                                                            },
+                                                            "props": {
+                                                                "height": {
+                                                                    "$$type": "size",
+                                                                    "value": {
+                                                                        "size": 72,
+                                                                        "unit": "px"
+                                                                    }
+                                                                },
+                                                                "border-radius": {
+                                                                    "$$type": "size",
+                                                                    "value": {
+                                                                        "size": 12,
+                                                                        "unit": "px"
+                                                                    }
+                                                                },
+                                                                "background": {
+                                                                    "$$type": "background",
+                                                                    "value": {
+                                                                        "color": {
+                                                                            "$$type": "global-color-variable",
+                                                                            "value": "e-gv-9a618ee"
+                                                                        }
+                                                                    }
+                                                                }
+                                                            },
+                                                            "custom_css": null
+                                                        }
+                                                    ]
+                                                }
+                                            },
+                                            "editor_settings": {
+                                                "title": "Sw secondary-light chip"
+                                            },
+                                            "version": "0.0"
+                                        },
+                                        {
+                                            "id": "46a4ba69",
+                                            "elType": "widget",
+                                            "settings": {
+                                                "classes": {
+                                                    "$$type": "classes",
+                                                    "value": [
+                                                        "e-15b14266-bd18"
+                                                    ]
+                                                },
+                                                "paragraph": {
+                                                    "$$type": "escaped-html",
+                                                    "value": "color-secondary-light #fedeac"
+                                                }
+                                            },
+                                            "elements": [],
+                                            "widgetType": "e-paragraph",
+                                            "styles": {
+                                                "e-15b14266-bd18": {
+                                                    "id": "e-15b14266-bd18",
+                                                    "label": "local",
+                                                    "type": "class",
+                                                    "variants": [
+                                                        {
+                                                            "meta": {
+                                                                "breakpoint": "desktop",
+                                                                "state": null
+                                                            },
+                                                            "props": {
+                                                                "font-size": {
+                                                                    "$$type": "size",
+                                                                    "value": {
+                                                                        "size": 14,
+                                                                        "unit": "px"
+                                                                    }
+                                                                },
+                                                                "line-height": {
+                                                                    "$$type": "size",
+                                                                    "value": {
+                                                                        "size": 20,
+                                                                        "unit": "px"
+                                                                    }
+                                                                },
+                                                                "margin": {
+                                                                    "$$type": "dimensions",
+                                                                    "value": {
+                                                                        "block-start": {
+                                                                            "$$type": "size",
+                                                                            "value": {
+                                                                                "size": 8,
+                                                                                "unit": "px"
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                }
+                                                            },
+                                                            "custom_css": null
+                                                        }
+                                                    ]
+                                                }
+                                            },
+                                            "editor_settings": {
+                                                "title": "Sw secondary-light label"
+                                            },
+                                            "version": "0.0"
+                                        }
+                                    ],
+                                    "isInner": false,
+                                    "editor_settings": {
+                                        "title": "Sw secondary-light"
+                                    },
+                                    "version": "0.0"
+                                },
+                                {
+                                    "id": "4ffdec10",
+                                    "elType": "e-div-block",
+                                    "elements": [
+                                        {
+                                            "id": "1f0039c9",
+                                            "elType": "e-div-block",
+                                            "settings": {
+                                                "classes": {
+                                                    "$$type": "classes",
+                                                    "value": [
+                                                        "e-34481e9d-c055"
+                                                    ]
+                                                }
+                                            },
+                                            "elements": [],
+                                            "isInner": false,
+                                            "styles": {
+                                                "e-34481e9d-c055": {
+                                                    "id": "e-34481e9d-c055",
+                                                    "label": "local",
+                                                    "type": "class",
+                                                    "variants": [
+                                                        {
+                                                            "meta": {
+                                                                "breakpoint": "desktop",
+                                                                "state": null
+                                                            },
+                                                            "props": {
+                                                                "height": {
+                                                                    "$$type": "size",
+                                                                    "value": {
+                                                                        "size": 72,
+                                                                        "unit": "px"
+                                                                    }
+                                                                },
+                                                                "border-radius": {
+                                                                    "$$type": "size",
+                                                                    "value": {
+                                                                        "size": 12,
+                                                                        "unit": "px"
+                                                                    }
+                                                                },
+                                                                "background": {
+                                                                    "$$type": "background",
+                                                                    "value": {
+                                                                        "color": {
+                                                                            "$$type": "global-color-variable",
+                                                                            "value": "e-gv-50dc762"
+                                                                        }
+                                                                    }
+                                                                }
+                                                            },
+                                                            "custom_css": null
+                                                        }
+                                                    ]
+                                                }
+                                            },
+                                            "editor_settings": {
+                                                "title": "Sw accent chip"
+                                            },
+                                            "version": "0.0"
+                                        },
+                                        {
+                                            "id": "67856ecf",
+                                            "elType": "widget",
+                                            "settings": {
+                                                "classes": {
+                                                    "$$type": "classes",
+                                                    "value": [
+                                                        "e-63785456-9618"
+                                                    ]
+                                                },
+                                                "paragraph": {
+                                                    "$$type": "escaped-html",
+                                                    "value": "color-accent #77408c"
+                                                }
+                                            },
+                                            "elements": [],
+                                            "widgetType": "e-paragraph",
+                                            "styles": {
+                                                "e-63785456-9618": {
+                                                    "id": "e-63785456-9618",
+                                                    "label": "local",
+                                                    "type": "class",
+                                                    "variants": [
+                                                        {
+                                                            "meta": {
+                                                                "breakpoint": "desktop",
+                                                                "state": null
+                                                            },
+                                                            "props": {
+                                                                "font-size": {
+                                                                    "$$type": "size",
+                                                                    "value": {
+                                                                        "size": 14,
+                                                                        "unit": "px"
+                                                                    }
+                                                                },
+                                                                "line-height": {
+                                                                    "$$type": "size",
+                                                                    "value": {
+                                                                        "size": 20,
+                                                                        "unit": "px"
+                                                                    }
+                                                                },
+                                                                "margin": {
+                                                                    "$$type": "dimensions",
+                                                                    "value": {
+                                                                        "block-start": {
+                                                                            "$$type": "size",
+                                                                            "value": {
+                                                                                "size": 8,
+                                                                                "unit": "px"
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                }
+                                                            },
+                                                            "custom_css": null
+                                                        }
+                                                    ]
+                                                }
+                                            },
+                                            "editor_settings": {
+                                                "title": "Sw accent label"
+                                            },
+                                            "version": "0.0"
+                                        }
+                                    ],
+                                    "isInner": false,
+                                    "editor_settings": {
+                                        "title": "Sw accent"
+                                    },
+                                    "version": "0.0"
+                                },
+                                {
+                                    "id": "47bc9376",
+                                    "elType": "e-div-block",
+                                    "elements": [
+                                        {
+                                            "id": "b521b00",
+                                            "elType": "e-div-block",
+                                            "settings": {
+                                                "classes": {
+                                                    "$$type": "classes",
+                                                    "value": [
+                                                        "e-1d7d8de2-2348"
+                                                    ]
+                                                }
+                                            },
+                                            "elements": [],
+                                            "isInner": false,
+                                            "styles": {
+                                                "e-1d7d8de2-2348": {
+                                                    "id": "e-1d7d8de2-2348",
+                                                    "label": "local",
+                                                    "type": "class",
+                                                    "variants": [
+                                                        {
+                                                            "meta": {
+                                                                "breakpoint": "desktop",
+                                                                "state": null
+                                                            },
+                                                            "props": {
+                                                                "height": {
+                                                                    "$$type": "size",
+                                                                    "value": {
+                                                                        "size": 72,
+                                                                        "unit": "px"
+                                                                    }
+                                                                },
+                                                                "border-radius": {
+                                                                    "$$type": "size",
+                                                                    "value": {
+                                                                        "size": 12,
+                                                                        "unit": "px"
+                                                                    }
+                                                                },
+                                                                "background": {
+                                                                    "$$type": "background",
+                                                                    "value": {
+                                                                        "color": {
+                                                                            "$$type": "global-color-variable",
+                                                                            "value": "e-gv-cc746d4"
+                                                                        }
+                                                                    }
+                                                                }
+                                                            },
+                                                            "custom_css": null
+                                                        }
+                                                    ]
+                                                }
+                                            },
+                                            "editor_settings": {
+                                                "title": "Sw heading chip"
+                                            },
+                                            "version": "0.0"
+                                        },
+                                        {
+                                            "id": "2cc6b001",
+                                            "elType": "widget",
+                                            "settings": {
+                                                "classes": {
+                                                    "$$type": "classes",
+                                                    "value": [
+                                                        "e-45d99d9b-40c8"
+                                                    ]
+                                                },
+                                                "paragraph": {
+                                                    "$$type": "escaped-html",
+                                                    "value": "color-heading #2d2d2d"
+                                                }
+                                            },
+                                            "elements": [],
+                                            "widgetType": "e-paragraph",
+                                            "styles": {
+                                                "e-45d99d9b-40c8": {
+                                                    "id": "e-45d99d9b-40c8",
+                                                    "label": "local",
+                                                    "type": "class",
+                                                    "variants": [
+                                                        {
+                                                            "meta": {
+                                                                "breakpoint": "desktop",
+                                                                "state": null
+                                                            },
+                                                            "props": {
+                                                                "font-size": {
+                                                                    "$$type": "size",
+                                                                    "value": {
+                                                                        "size": 14,
+                                                                        "unit": "px"
+                                                                    }
+                                                                },
+                                                                "line-height": {
+                                                                    "$$type": "size",
+                                                                    "value": {
+                                                                        "size": 20,
+                                                                        "unit": "px"
+                                                                    }
+                                                                },
+                                                                "margin": {
+                                                                    "$$type": "dimensions",
+                                                                    "value": {
+                                                                        "block-start": {
+                                                                            "$$type": "size",
+                                                                            "value": {
+                                                                                "size": 8,
+                                                                                "unit": "px"
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                }
+                                                            },
+                                                            "custom_css": null
+                                                        }
+                                                    ]
+                                                }
+                                            },
+                                            "editor_settings": {
+                                                "title": "Sw heading label"
+                                            },
+                                            "version": "0.0"
+                                        }
+                                    ],
+                                    "isInner": false,
+                                    "editor_settings": {
+                                        "title": "Sw heading"
+                                    },
+                                    "version": "0.0"
+                                },
+                                {
+                                    "id": "33c31b5d",
+                                    "elType": "e-div-block",
+                                    "elements": [
+                                        {
+                                            "id": "29e6a3ba",
+                                            "elType": "e-div-block",
+                                            "settings": {
+                                                "classes": {
+                                                    "$$type": "classes",
+                                                    "value": [
+                                                        "e-1651c3d4-b68f"
+                                                    ]
+                                                }
+                                            },
+                                            "elements": [],
+                                            "isInner": false,
+                                            "styles": {
+                                                "e-1651c3d4-b68f": {
+                                                    "id": "e-1651c3d4-b68f",
+                                                    "label": "local",
+                                                    "type": "class",
+                                                    "variants": [
+                                                        {
+                                                            "meta": {
+                                                                "breakpoint": "desktop",
+                                                                "state": null
+                                                            },
+                                                            "props": {
+                                                                "height": {
+                                                                    "$$type": "size",
+                                                                    "value": {
+                                                                        "size": 72,
+                                                                        "unit": "px"
+                                                                    }
+                                                                },
+                                                                "border-radius": {
+                                                                    "$$type": "size",
+                                                                    "value": {
+                                                                        "size": 12,
+                                                                        "unit": "px"
+                                                                    }
+                                                                },
+                                                                "background": {
+                                                                    "$$type": "background",
+                                                                    "value": {
+                                                                        "color": {
+                                                                            "$$type": "global-color-variable",
+                                                                            "value": "e-gv-71caa99"
+                                                                        }
+                                                                    }
+                                                                }
+                                                            },
+                                                            "custom_css": null
+                                                        }
+                                                    ]
+                                                }
+                                            },
+                                            "editor_settings": {
+                                                "title": "Sw body chip"
+                                            },
+                                            "version": "0.0"
+                                        },
+                                        {
+                                            "id": "62802f53",
+                                            "elType": "widget",
+                                            "settings": {
+                                                "classes": {
+                                                    "$$type": "classes",
+                                                    "value": [
+                                                        "e-32251675-1a4a"
+                                                    ]
+                                                },
+                                                "paragraph": {
+                                                    "$$type": "escaped-html",
+                                                    "value": "color-body #5d5d5d"
+                                                }
+                                            },
+                                            "elements": [],
+                                            "widgetType": "e-paragraph",
+                                            "styles": {
+                                                "e-32251675-1a4a": {
+                                                    "id": "e-32251675-1a4a",
+                                                    "label": "local",
+                                                    "type": "class",
+                                                    "variants": [
+                                                        {
+                                                            "meta": {
+                                                                "breakpoint": "desktop",
+                                                                "state": null
+                                                            },
+                                                            "props": {
+                                                                "font-size": {
+                                                                    "$$type": "size",
+                                                                    "value": {
+                                                                        "size": 14,
+                                                                        "unit": "px"
+                                                                    }
+                                                                },
+                                                                "line-height": {
+                                                                    "$$type": "size",
+                                                                    "value": {
+                                                                        "size": 20,
+                                                                        "unit": "px"
+                                                                    }
+                                                                },
+                                                                "margin": {
+                                                                    "$$type": "dimensions",
+                                                                    "value": {
+                                                                        "block-start": {
+                                                                            "$$type": "size",
+                                                                            "value": {
+                                                                                "size": 8,
+                                                                                "unit": "px"
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                }
+                                                            },
+                                                            "custom_css": null
+                                                        }
+                                                    ]
+                                                }
+                                            },
+                                            "editor_settings": {
+                                                "title": "Sw body label"
+                                            },
+                                            "version": "0.0"
+                                        }
+                                    ],
+                                    "isInner": false,
+                                    "editor_settings": {
+                                        "title": "Sw body"
+                                    },
+                                    "version": "0.0"
+                                },
+                                {
+                                    "id": "5d34566e",
+                                    "elType": "e-div-block",
+                                    "elements": [
+                                        {
+                                            "id": "31016a59",
+                                            "elType": "e-div-block",
+                                            "settings": {
+                                                "classes": {
+                                                    "$$type": "classes",
+                                                    "value": [
+                                                        "e-719e8624-fb40"
+                                                    ]
+                                                }
+                                            },
+                                            "elements": [],
+                                            "isInner": false,
+                                            "styles": {
+                                                "e-719e8624-fb40": {
+                                                    "id": "e-719e8624-fb40",
+                                                    "label": "local",
+                                                    "type": "class",
+                                                    "variants": [
+                                                        {
+                                                            "meta": {
+                                                                "breakpoint": "desktop",
+                                                                "state": null
+                                                            },
+                                                            "props": {
+                                                                "height": {
+                                                                    "$$type": "size",
+                                                                    "value": {
+                                                                        "size": 72,
+                                                                        "unit": "px"
+                                                                    }
+                                                                },
+                                                                "border-radius": {
+                                                                    "$$type": "size",
+                                                                    "value": {
+                                                                        "size": 12,
+                                                                        "unit": "px"
+                                                                    }
+                                                                },
+                                                                "background": {
+                                                                    "$$type": "background",
+                                                                    "value": {
+                                                                        "color": {
+                                                                            "$$type": "global-color-variable",
+                                                                            "value": "e-gv-96f26a9"
+                                                                        }
+                                                                    }
+                                                                }
+                                                            },
+                                                            "custom_css": null
+                                                        }
+                                                    ]
+                                                }
+                                            },
+                                            "editor_settings": {
+                                                "title": "Sw muted chip"
+                                            },
+                                            "version": "0.0"
+                                        },
+                                        {
+                                            "id": "7ca55c14",
+                                            "elType": "widget",
+                                            "settings": {
+                                                "classes": {
+                                                    "$$type": "classes",
+                                                    "value": [
+                                                        "e-50f6e750-3547"
+                                                    ]
+                                                },
+                                                "paragraph": {
+                                                    "$$type": "escaped-html",
+                                                    "value": "color-muted #6d6d6d"
+                                                }
+                                            },
+                                            "elements": [],
+                                            "widgetType": "e-paragraph",
+                                            "styles": {
+                                                "e-50f6e750-3547": {
+                                                    "id": "e-50f6e750-3547",
+                                                    "label": "local",
+                                                    "type": "class",
+                                                    "variants": [
+                                                        {
+                                                            "meta": {
+                                                                "breakpoint": "desktop",
+                                                                "state": null
+                                                            },
+                                                            "props": {
+                                                                "font-size": {
+                                                                    "$$type": "size",
+                                                                    "value": {
+                                                                        "size": 14,
+                                                                        "unit": "px"
+                                                                    }
+                                                                },
+                                                                "line-height": {
+                                                                    "$$type": "size",
+                                                                    "value": {
+                                                                        "size": 20,
+                                                                        "unit": "px"
+                                                                    }
+                                                                },
+                                                                "margin": {
+                                                                    "$$type": "dimensions",
+                                                                    "value": {
+                                                                        "block-start": {
+                                                                            "$$type": "size",
+                                                                            "value": {
+                                                                                "size": 8,
+                                                                                "unit": "px"
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                }
+                                                            },
+                                                            "custom_css": null
+                                                        }
+                                                    ]
+                                                }
+                                            },
+                                            "editor_settings": {
+                                                "title": "Sw muted label"
+                                            },
+                                            "version": "0.0"
+                                        }
+                                    ],
+                                    "isInner": false,
+                                    "editor_settings": {
+                                        "title": "Sw muted"
+                                    },
+                                    "version": "0.0"
+                                },
+                                {
+                                    "id": "65f3f22f",
+                                    "elType": "e-div-block",
+                                    "elements": [
+                                        {
+                                            "id": "6bd92521",
+                                            "elType": "e-div-block",
+                                            "settings": {
+                                                "classes": {
+                                                    "$$type": "classes",
+                                                    "value": [
+                                                        "e-663bb2b3-1759"
+                                                    ]
+                                                }
+                                            },
+                                            "elements": [],
+                                            "isInner": false,
+                                            "styles": {
+                                                "e-663bb2b3-1759": {
+                                                    "id": "e-663bb2b3-1759",
+                                                    "label": "local",
+                                                    "type": "class",
+                                                    "variants": [
+                                                        {
+                                                            "meta": {
+                                                                "breakpoint": "desktop",
+                                                                "state": null
+                                                            },
+                                                            "props": {
+                                                                "height": {
+                                                                    "$$type": "size",
+                                                                    "value": {
+                                                                        "size": 72,
+                                                                        "unit": "px"
+                                                                    }
+                                                                },
+                                                                "border-radius": {
+                                                                    "$$type": "size",
+                                                                    "value": {
+                                                                        "size": 12,
+                                                                        "unit": "px"
+                                                                    }
+                                                                },
+                                                                "background": {
+                                                                    "$$type": "background",
+                                                                    "value": {
+                                                                        "color": {
+                                                                            "$$type": "global-color-variable",
+                                                                            "value": "e-gv-434f1b3"
+                                                                        }
+                                                                    }
+                                                                }
+                                                            },
+                                                            "custom_css": null
+                                                        }
+                                                    ]
+                                                }
+                                            },
+                                            "editor_settings": {
+                                                "title": "Sw dark-surface chip"
+                                            },
+                                            "version": "0.0"
+                                        },
+                                        {
+                                            "id": "7fe84709",
+                                            "elType": "widget",
+                                            "settings": {
+                                                "classes": {
+                                                    "$$type": "classes",
+                                                    "value": [
+                                                        "e-2a8ed36b-b570"
+                                                    ]
+                                                },
+                                                "paragraph": {
+                                                    "$$type": "escaped-html",
+                                                    "value": "color-dark-surface #2a2a2a"
+                                                }
+                                            },
+                                            "elements": [],
+                                            "widgetType": "e-paragraph",
+                                            "styles": {
+                                                "e-2a8ed36b-b570": {
+                                                    "id": "e-2a8ed36b-b570",
+                                                    "label": "local",
+                                                    "type": "class",
+                                                    "variants": [
+                                                        {
+                                                            "meta": {
+                                                                "breakpoint": "desktop",
+                                                                "state": null
+                                                            },
+                                                            "props": {
+                                                                "font-size": {
+                                                                    "$$type": "size",
+                                                                    "value": {
+                                                                        "size": 14,
+                                                                        "unit": "px"
+                                                                    }
+                                                                },
+                                                                "line-height": {
+                                                                    "$$type": "size",
+                                                                    "value": {
+                                                                        "size": 20,
+                                                                        "unit": "px"
+                                                                    }
+                                                                },
+                                                                "margin": {
+                                                                    "$$type": "dimensions",
+                                                                    "value": {
+                                                                        "block-start": {
+                                                                            "$$type": "size",
+                                                                            "value": {
+                                                                                "size": 8,
+                                                                                "unit": "px"
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                }
+                                                            },
+                                                            "custom_css": null
+                                                        }
+                                                    ]
+                                                }
+                                            },
+                                            "editor_settings": {
+                                                "title": "Sw dark-surface label"
+                                            },
+                                            "version": "0.0"
+                                        }
+                                    ],
+                                    "isInner": false,
+                                    "editor_settings": {
+                                        "title": "Sw dark-surface"
+                                    },
+                                    "version": "0.0"
+                                },
+                                {
+                                    "id": "227e9feb",
+                                    "elType": "e-div-block",
+                                    "elements": [
+                                        {
+                                            "id": "f7a9126",
+                                            "elType": "e-div-block",
+                                            "settings": {
+                                                "classes": {
+                                                    "$$type": "classes",
+                                                    "value": [
+                                                        "e-2d704ece-78f0"
+                                                    ]
+                                                }
+                                            },
+                                            "elements": [],
+                                            "isInner": false,
+                                            "styles": {
+                                                "e-2d704ece-78f0": {
+                                                    "id": "e-2d704ece-78f0",
+                                                    "label": "local",
+                                                    "type": "class",
+                                                    "variants": [
+                                                        {
+                                                            "meta": {
+                                                                "breakpoint": "desktop",
+                                                                "state": null
+                                                            },
+                                                            "props": {
+                                                                "height": {
+                                                                    "$$type": "size",
+                                                                    "value": {
+                                                                        "size": 72,
+                                                                        "unit": "px"
+                                                                    }
+                                                                },
+                                                                "border-radius": {
+                                                                    "$$type": "size",
+                                                                    "value": {
+                                                                        "size": 12,
+                                                                        "unit": "px"
+                                                                    }
+                                                                },
+                                                                "border-width": {
+                                                                    "$$type": "size",
+                                                                    "value": {
+                                                                        "size": 1,
+                                                                        "unit": "px"
+                                                                    }
+                                                                },
+                                                                "border-color": {
+                                                                    "$$type": "global-color-variable",
+                                                                    "value": "e-gv-87fc8d8"
+                                                                },
+                                                                "border-style": {
+                                                                    "$$type": "string",
+                                                                    "value": "solid"
+                                                                },
+                                                                "background": {
+                                                                    "$$type": "background",
+                                                                    "value": {
+                                                                        "color": {
+                                                                            "$$type": "global-color-variable",
+                                                                            "value": "e-gv-44d4cd5"
+                                                                        }
+                                                                    }
+                                                                }
+                                                            },
+                                                            "custom_css": null
+                                                        }
+                                                    ]
+                                                }
+                                            },
+                                            "editor_settings": {
+                                                "title": "Sw surface chip"
+                                            },
+                                            "version": "0.0"
+                                        },
+                                        {
+                                            "id": "303057ad",
+                                            "elType": "widget",
+                                            "settings": {
+                                                "classes": {
+                                                    "$$type": "classes",
+                                                    "value": [
+                                                        "e-8ad5ad5-f616"
+                                                    ]
+                                                },
+                                                "paragraph": {
+                                                    "$$type": "escaped-html",
+                                                    "value": "color-surface #f7f7f7"
+                                                }
+                                            },
+                                            "elements": [],
+                                            "widgetType": "e-paragraph",
+                                            "styles": {
+                                                "e-8ad5ad5-f616": {
+                                                    "id": "e-8ad5ad5-f616",
+                                                    "label": "local",
+                                                    "type": "class",
+                                                    "variants": [
+                                                        {
+                                                            "meta": {
+                                                                "breakpoint": "desktop",
+                                                                "state": null
+                                                            },
+                                                            "props": {
+                                                                "font-size": {
+                                                                    "$$type": "size",
+                                                                    "value": {
+                                                                        "size": 14,
+                                                                        "unit": "px"
+                                                                    }
+                                                                },
+                                                                "line-height": {
+                                                                    "$$type": "size",
+                                                                    "value": {
+                                                                        "size": 20,
+                                                                        "unit": "px"
+                                                                    }
+                                                                },
+                                                                "margin": {
+                                                                    "$$type": "dimensions",
+                                                                    "value": {
+                                                                        "block-start": {
+                                                                            "$$type": "size",
+                                                                            "value": {
+                                                                                "size": 8,
+                                                                                "unit": "px"
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                }
+                                                            },
+                                                            "custom_css": null
+                                                        }
+                                                    ]
+                                                }
+                                            },
+                                            "editor_settings": {
+                                                "title": "Sw surface label"
+                                            },
+                                            "version": "0.0"
+                                        }
+                                    ],
+                                    "isInner": false,
+                                    "editor_settings": {
+                                        "title": "Sw surface"
+                                    },
+                                    "version": "0.0"
+                                },
+                                {
+                                    "id": "ecb38da",
+                                    "elType": "e-div-block",
+                                    "elements": [
+                                        {
+                                            "id": "2d4d6c73",
+                                            "elType": "e-div-block",
+                                            "settings": {
+                                                "classes": {
+                                                    "$$type": "classes",
+                                                    "value": [
+                                                        "e-2048da46-63db"
+                                                    ]
+                                                }
+                                            },
+                                            "elements": [],
+                                            "isInner": false,
+                                            "styles": {
+                                                "e-2048da46-63db": {
+                                                    "id": "e-2048da46-63db",
+                                                    "label": "local",
+                                                    "type": "class",
+                                                    "variants": [
+                                                        {
+                                                            "meta": {
+                                                                "breakpoint": "desktop",
+                                                                "state": null
+                                                            },
+                                                            "props": {
+                                                                "height": {
+                                                                    "$$type": "size",
+                                                                    "value": {
+                                                                        "size": 72,
+                                                                        "unit": "px"
+                                                                    }
+                                                                },
+                                                                "border-radius": {
+                                                                    "$$type": "size",
+                                                                    "value": {
+                                                                        "size": 12,
+                                                                        "unit": "px"
+                                                                    }
+                                                                },
+                                                                "background": {
+                                                                    "$$type": "background",
+                                                                    "value": {
+                                                                        "color": {
+                                                                            "$$type": "global-color-variable",
+                                                                            "value": "e-gv-87fc8d8"
+                                                                        }
+                                                                    }
+                                                                }
+                                                            },
+                                                            "custom_css": null
+                                                        }
+                                                    ]
+                                                }
+                                            },
+                                            "editor_settings": {
+                                                "title": "Sw border chip"
+                                            },
+                                            "version": "0.0"
+                                        },
+                                        {
+                                            "id": "5a4e1e2c",
+                                            "elType": "widget",
+                                            "settings": {
+                                                "classes": {
+                                                    "$$type": "classes",
+                                                    "value": [
+                                                        "e-33d126c4-5d5b"
+                                                    ]
+                                                },
+                                                "paragraph": {
+                                                    "$$type": "escaped-html",
+                                                    "value": "color-border #e7e7e7"
+                                                }
+                                            },
+                                            "elements": [],
+                                            "widgetType": "e-paragraph",
+                                            "styles": {
+                                                "e-33d126c4-5d5b": {
+                                                    "id": "e-33d126c4-5d5b",
+                                                    "label": "local",
+                                                    "type": "class",
+                                                    "variants": [
+                                                        {
+                                                            "meta": {
+                                                                "breakpoint": "desktop",
+                                                                "state": null
+                                                            },
+                                                            "props": {
+                                                                "font-size": {
+                                                                    "$$type": "size",
+                                                                    "value": {
+                                                                        "size": 14,
+                                                                        "unit": "px"
+                                                                    }
+                                                                },
+                                                                "line-height": {
+                                                                    "$$type": "size",
+                                                                    "value": {
+                                                                        "size": 20,
+                                                                        "unit": "px"
+                                                                    }
+                                                                },
+                                                                "margin": {
+                                                                    "$$type": "dimensions",
+                                                                    "value": {
+                                                                        "block-start": {
+                                                                            "$$type": "size",
+                                                                            "value": {
+                                                                                "size": 8,
+                                                                                "unit": "px"
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                }
+                                                            },
+                                                            "custom_css": null
+                                                        }
+                                                    ]
+                                                }
+                                            },
+                                            "editor_settings": {
+                                                "title": "Sw border label"
+                                            },
+                                            "version": "0.0"
+                                        }
+                                    ],
+                                    "isInner": false,
+                                    "editor_settings": {
+                                        "title": "Sw border"
+                                    },
+                                    "version": "0.0"
+                                }
+                            ],
+                            "isInner": false,
+                            "styles": {
+                                "e-479d36da-c0fa": {
+                                    "id": "e-479d36da-c0fa",
+                                    "label": "local",
+                                    "type": "class",
+                                    "variants": [
+                                        {
+                                            "meta": {
+                                                "breakpoint": "tablet",
+                                                "state": null
+                                            },
+                                            "props": {
+                                                "grid-template-columns": {
+                                                    "$$type": "string",
+                                                    "value": "repeat(4, 1fr)"
+                                                },
+                                                "grid-template-rows": {
+                                                    "$$type": "string",
+                                                    "value": "repeat(3, auto)"
+                                                }
+                                            },
+                                            "custom_css": null
+                                        },
+                                        {
+                                            "meta": {
+                                                "breakpoint": "mobile",
+                                                "state": null
+                                            },
+                                            "props": {
+                                                "grid-template-columns": {
+                                                    "$$type": "string",
+                                                    "value": "repeat(2, 1fr)"
+                                                },
+                                                "grid-template-rows": {
+                                                    "$$type": "string",
+                                                    "value": "repeat(6, auto)"
+                                                }
+                                            },
+                                            "custom_css": null
+                                        },
+                                        {
+                                            "meta": {
+                                                "breakpoint": "desktop",
+                                                "state": null
+                                            },
+                                            "props": {
+                                                "padding": {
+                                                    "$$type": "size",
+                                                    "value": {
+                                                        "size": 0,
+                                                        "unit": "px"
+                                                    }
+                                                },
+                                                "gap": {
+                                                    "$$type": "size",
+                                                    "value": {
+                                                        "size": 24,
+                                                        "unit": "px"
+                                                    }
+                                                },
+                                                "grid-template-columns": {
+                                                    "$$type": "string",
+                                                    "value": "repeat(6, 1fr)"
+                                                },
+                                                "grid-template-rows": {
+                                                    "$$type": "string",
+                                                    "value": "repeat(2, auto)"
+                                                }
+                                            },
+                                            "custom_css": null
+                                        }
+                                    ]
+                                }
+                            },
+                            "editor_settings": {
+                                "title": "SG Swatches"
+                            },
+                            "version": "0.0"
+                        }
+                    ],
+                    "isInner": false,
+                    "styles": {
+                        "e-310c8dd6-f0b1": {
+                            "id": "e-310c8dd6-f0b1",
+                            "label": "local",
+                            "type": "class",
+                            "variants": [
+                                {
+                                    "meta": {
+                                        "breakpoint": "desktop",
+                                        "state": null
+                                    },
+                                    "props": {
+                                        "gap": {
+                                            "$$type": "size",
+                                            "value": {
+                                                "size": 24,
+                                                "unit": "px"
+                                            }
+                                        },
+                                        "align-items": {
+                                            "$$type": "string",
+                                            "value": "flex-start"
+                                        }
+                                    },
+                                    "custom_css": null
+                                }
+                            ]
+                        }
+                    },
+                    "editor_settings": {
+                        "title": "SG Colors container"
+                    },
+                    "version": "0.0"
+                }
+            ],
+            "isInner": false,
+            "editor_settings": {
+                "title": "SG Colors"
+            },
+            "version": "0.0"
+        },
+        {
+            "id": "1c11793d",
+            "elType": "e-flexbox",
+            "settings": {
+                "classes": {
+                    "$$type": "classes",
+                    "value": [
+                        "g-515d564"
+                    ]
+                },
+                "tag": {
+                    "$$type": "string",
+                    "value": "section"
+                }
+            },
+            "elements": [
+                {
+                    "id": "371415da",
+                    "elType": "e-flexbox",
+                    "settings": {
+                        "classes": {
+                            "$$type": "classes",
+                            "value": [
+                                "g-bfbe280",
+                                "e-6b15a12e-7f7b"
+                            ]
+                        }
+                    },
+                    "elements": [
+                        {
+                            "id": "7880da4a",
+                            "elType": "widget",
+                            "settings": {
+                                "classes": {
+                                    "$$type": "classes",
+                                    "value": [
+                                        "g-1eefe63"
+                                    ]
+                                },
+                                "paragraph": {
+                                    "$$type": "escaped-html",
+                                    "value": "Badge, buttons, divider"
+                                }
+                            },
+                            "elements": [],
+                            "widgetType": "e-paragraph",
+                            "editor_settings": {
+                                "title": "SG Elements badge"
+                            },
+                            "version": "0.0"
+                        },
+                        {
+                            "id": "2f55c857",
+                            "elType": "e-flexbox",
+                            "settings": {
+                                "classes": {
+                                    "$$type": "classes",
+                                    "value": [
+                                        "e-5eb304cf-5756"
+                                    ]
+                                }
+                            },
+                            "elements": [
+                                {
+                                    "id": "5289f509",
+                                    "elType": "widget",
+                                    "settings": {
+                                        "classes": {
+                                            "$$type": "classes",
+                                            "value": [
+                                                "g-6036cd8"
+                                            ]
+                                        },
+                                        "text": {
+                                            "$$type": "escaped-html",
+                                            "value": "Get Started"
+                                        },
+                                        "link": {
+                                            "$$type": "link",
+                                            "value": {
+                                                "destination": {
+                                                    "$$type": "url",
+                                                    "value": "#"
+                                                },
+                                                "tag": {
+                                                    "$$type": "string",
+                                                    "value": "a"
+                                                }
+                                            }
+                                        }
+                                    },
+                                    "elements": [],
+                                    "widgetType": "e-button",
+                                    "editor_settings": {
+                                        "title": "SG Btn primary"
+                                    },
+                                    "version": "0.0"
+                                },
+                                {
+                                    "id": "195060de",
+                                    "elType": "widget",
+                                    "settings": {
+                                        "classes": {
+                                            "$$type": "classes",
+                                            "value": [
+                                                "g-4c59b4f"
+                                            ]
+                                        },
+                                        "text": {
+                                            "$$type": "escaped-html",
+                                            "value": "Discover Our Innovation"
+                                        },
+                                        "link": {
+                                            "$$type": "link",
+                                            "value": {
+                                                "destination": {
+                                                    "$$type": "url",
+                                                    "value": "#"
+                                                },
+                                                "tag": {
+                                                    "$$type": "string",
+                                                    "value": "a"
+                                                }
+                                            }
+                                        }
+                                    },
+                                    "elements": [],
+                                    "widgetType": "e-button",
+                                    "editor_settings": {
+                                        "title": "SG Btn link"
+                                    },
+                                    "version": "0.0"
+                                },
+                                {
+                                    "id": "360c54d5",
+                                    "elType": "widget",
+                                    "settings": {
+                                        "classes": {
+                                            "$$type": "classes",
+                                            "value": [
+                                                "g-d45aaf5",
+                                                "g-6036cd8"
+                                            ]
+                                        },
+                                        "text": {
+                                            "$$type": "escaped-html",
+                                            "value": "Get Started"
+                                        },
+                                        "link": {
+                                            "$$type": "link",
+                                            "value": {
+                                                "destination": {
+                                                    "$$type": "url",
+                                                    "value": "#"
+                                                },
+                                                "tag": {
+                                                    "$$type": "string",
+                                                    "value": "a"
+                                                }
+                                            }
+                                        }
+                                    },
+                                    "elements": [],
+                                    "widgetType": "e-button",
+                                    "editor_settings": {
+                                        "title": "SG Btn small"
+                                    },
+                                    "version": "0.0"
+                                }
+                            ],
+                            "isInner": false,
+                            "styles": {
+                                "e-5eb304cf-5756": {
+                                    "id": "e-5eb304cf-5756",
+                                    "label": "local",
+                                    "type": "class",
+                                    "variants": [
+                                        {
+                                            "meta": {
+                                                "breakpoint": "desktop",
+                                                "state": null
+                                            },
+                                            "props": {
+                                                "padding": {
+                                                    "$$type": "size",
+                                                    "value": {
+                                                        "size": 0,
+                                                        "unit": "px"
+                                                    }
+                                                },
+                                                "gap": {
+                                                    "$$type": "size",
+                                                    "value": {
+                                                        "size": 16,
+                                                        "unit": "px"
+                                                    }
+                                                },
+                                                "flex-wrap": {
+                                                    "$$type": "string",
+                                                    "value": "wrap"
+                                                },
+                                                "align-items": {
+                                                    "$$type": "string",
+                                                    "value": "center"
+                                                }
+                                            },
+                                            "custom_css": null
+                                        }
+                                    ]
+                                }
+                            },
+                            "editor_settings": {
+                                "title": "SG Buttons row"
+                            },
+                            "version": "0.0"
+                        },
+                        {
+                            "id": "27242cd1",
+                            "elType": "widget",
+                            "settings": {
+                                "classes": {
+                                    "$$type": "classes",
+                                    "value": [
+                                        "g-26f6dcb"
+                                    ]
+                                }
+                            },
+                            "elements": [],
+                            "widgetType": "e-divider",
+                            "editor_settings": {
+                                "title": "SG Divider"
+                            },
+                            "version": "0.0"
+                        }
+                    ],
+                    "isInner": false,
+                    "styles": {
+                        "e-6b15a12e-7f7b": {
+                            "id": "e-6b15a12e-7f7b",
+                            "label": "local",
+                            "type": "class",
+                            "variants": [
+                                {
+                                    "meta": {
+                                        "breakpoint": "desktop",
+                                        "state": null
+                                    },
+                                    "props": {
+                                        "gap": {
+                                            "$$type": "size",
+                                            "value": {
+                                                "size": 24,
+                                                "unit": "px"
+                                            }
+                                        },
+                                        "align-items": {
+                                            "$$type": "string",
+                                            "value": "flex-start"
+                                        }
+                                    },
+                                    "custom_css": null
+                                }
+                            ]
+                        }
+                    },
+                    "editor_settings": {
+                        "title": "SG Elements container"
+                    },
+                    "version": "0.0"
+                }
+            ],
+            "isInner": false,
+            "editor_settings": {
+                "title": "SG Elements"
+            },
+            "version": "0.0"
+        },
+        {
+            "id": "699666f",
+            "elType": "e-flexbox",
+            "settings": {
+                "classes": {
+                    "$$type": "classes",
+                    "value": [
+                        "g-515d564",
+                        "g-6cdc216"
+                    ]
+                },
+                "tag": {
+                    "$$type": "string",
+                    "value": "section"
+                }
+            },
+            "elements": [
+                {
+                    "id": "1e5ec0b8",
+                    "elType": "e-flexbox",
+                    "settings": {
+                        "classes": {
+                            "$$type": "classes",
+                            "value": [
+                                "g-bfbe280",
+                                "e-7accc2db-b697"
+                            ]
+                        }
+                    },
+                    "elements": [
+                        {
+                            "id": "353a4ee8",
+                            "elType": "widget",
+                            "settings": {
+                                "classes": {
+                                    "$$type": "classes",
+                                    "value": [
+                                        "g-1eefe63"
+                                    ]
+                                },
+                                "paragraph": {
+                                    "$$type": "escaped-html",
+                                    "value": "Cards"
+                                }
+                            },
+                            "elements": [],
+                            "widgetType": "e-paragraph",
+                            "editor_settings": {
+                                "title": "SG Cards badge"
+                            },
+                            "version": "0.0"
+                        },
+                        {
+                            "id": "4863551c",
+                            "elType": "e-grid",
+                            "settings": {
+                                "classes": {
+                                    "$$type": "classes",
+                                    "value": [
+                                        "e-6406e8a5-e164"
+                                    ]
+                                }
+                            },
+                            "elements": [
+                                {
+                                    "id": "6d01b712",
+                                    "elType": "e-flexbox",
+                                    "settings": {
+                                        "classes": {
+                                            "$$type": "classes",
+                                            "value": [
+                                                "g-ea555b0",
+                                                "g-358d0ec"
+                                            ]
+                                        }
+                                    },
+                                    "elements": [
+                                        {
+                                            "id": "149986ef",
+                                            "elType": "widget",
+                                            "settings": {
+                                                "classes": {
+                                                    "$$type": "classes",
+                                                    "value": [
+                                                        "e-e34111-99c4"
+                                                    ]
+                                                },
+                                                "tag": {
+                                                    "$$type": "string",
+                                                    "value": "h3"
+                                                },
+                                                "title": {
+                                                    "$$type": "escaped-html",
+                                                    "value": "Lorem ipsum mattis auctor a scelerisque"
+                                                }
+                                            },
+                                            "elements": [],
+                                            "widgetType": "e-heading",
+                                            "styles": {
+                                                "e-e34111-99c4": {
+                                                    "id": "e-e34111-99c4",
+                                                    "label": "local",
+                                                    "type": "class",
+                                                    "variants": [
+                                                        {
+                                                            "meta": {
+                                                                "breakpoint": "desktop",
+                                                                "state": null
+                                                            },
+                                                            "props": {
+                                                                "color": {
+                                                                    "$$type": "global-color-variable",
+                                                                    "value": "e-gv-2a8d524"
+                                                                }
+                                                            },
+                                                            "custom_css": null
+                                                        }
+                                                    ]
+                                                }
+                                            },
+                                            "editor_settings": {
+                                                "title": "Card outline title"
+                                            },
+                                            "version": "0.0"
+                                        },
+                                        {
+                                            "id": "6cbad925",
+                                            "elType": "widget",
+                                            "settings": {
+                                                "classes": {
+                                                    "$$type": "classes",
+                                                    "value": [
+                                                        "g-67b2c69"
+                                                    ]
+                                                },
+                                                "paragraph": {
+                                                    "$$type": "escaped-html",
+                                                    "value": "Lorem ipsum dolor sit amet consectetur. Aliquam quis adipiscing sed est cursus sit. Mattis nec viverra turpis est."
+                                                }
+                                            },
+                                            "elements": [],
+                                            "widgetType": "e-paragraph",
+                                            "editor_settings": {
+                                                "title": "Card outline text"
+                                            },
+                                            "version": "0.0"
+                                        }
+                                    ],
+                                    "isInner": false,
+                                    "editor_settings": {
+                                        "title": "Card outline"
+                                    },
+                                    "version": "0.0"
+                                },
+                                {
+                                    "id": "457b8b7a",
+                                    "elType": "e-flexbox",
+                                    "settings": {
+                                        "classes": {
+                                            "$$type": "classes",
+                                            "value": [
+                                                "g-ea555b0",
+                                                "g-581497d",
+                                                "e-46b24468-73e2"
+                                            ]
+                                        }
+                                    },
+                                    "elements": [
+                                        {
+                                            "id": "799a4e8c",
+                                            "elType": "widget",
+                                            "settings": {
+                                                "classes": {
+                                                    "$$type": "classes",
+                                                    "value": [
+                                                        "g-70c3ea7"
+                                                    ]
+                                                },
+                                                "tag": {
+                                                    "$$type": "string",
+                                                    "value": "h2"
+                                                },
+                                                "title": {
+                                                    "$$type": "escaped-html",
+                                                    "value": "You Know you face"
+                                                }
+                                            },
+                                            "elements": [],
+                                            "widgetType": "e-heading",
+                                            "editor_settings": {
+                                                "title": "Card dark title"
+                                            },
+                                            "version": "0.0"
+                                        },
+                                        {
+                                            "id": "6e359bee",
+                                            "elType": "widget",
+                                            "settings": {
+                                                "classes": {
+                                                    "$$type": "classes",
+                                                    "value": [
+                                                        "g-67b2c69",
+                                                        "g-70c3ea7"
+                                                    ]
+                                                },
+                                                "paragraph": {
+                                                    "$$type": "escaped-html",
+                                                    "value": "Lorem ipsum dolor sit amet consectetur. Nisi mus pellentesque odio lacus malesuada fringilla aliquam sodales sed."
+                                                }
+                                            },
+                                            "elements": [],
+                                            "widgetType": "e-paragraph",
+                                            "editor_settings": {
+                                                "title": "Card dark text"
+                                            },
+                                            "version": "0.0"
+                                        },
+                                        {
+                                            "id": "4cc35f07",
+                                            "elType": "widget",
+                                            "settings": {
+                                                "classes": {
+                                                    "$$type": "classes",
+                                                    "value": [
+                                                        "g-6036cd8"
+                                                    ]
+                                                },
+                                                "text": {
+                                                    "$$type": "escaped-html",
+                                                    "value": "Get Started"
+                                                },
+                                                "link": {
+                                                    "$$type": "link",
+                                                    "value": {
+                                                        "destination": {
+                                                            "$$type": "url",
+                                                            "value": "#"
+                                                        },
+                                                        "tag": {
+                                                            "$$type": "string",
+                                                            "value": "a"
+                                                        }
+                                                    }
+                                                }
+                                            },
+                                            "elements": [],
+                                            "widgetType": "e-button",
+                                            "editor_settings": {
+                                                "title": "Card dark button"
+                                            },
+                                            "version": "0.0"
+                                        }
+                                    ],
+                                    "isInner": false,
+                                    "styles": {
+                                        "e-46b24468-73e2": {
+                                            "id": "e-46b24468-73e2",
+                                            "label": "local",
+                                            "type": "class",
+                                            "variants": [
+                                                {
+                                                    "meta": {
+                                                        "breakpoint": "desktop",
+                                                        "state": null
+                                                    },
+                                                    "props": {
+                                                        "align-items": {
+                                                            "$$type": "string",
+                                                            "value": "flex-start"
+                                                        }
+                                                    },
+                                                    "custom_css": null
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    "editor_settings": {
+                                        "title": "Card dark"
+                                    },
+                                    "version": "0.0"
+                                },
+                                {
+                                    "id": "c05b10",
+                                    "elType": "e-flexbox",
+                                    "settings": {
+                                        "classes": {
+                                            "$$type": "classes",
+                                            "value": [
+                                                "g-ea555b0",
+                                                "g-939bfbf",
+                                                "e-3700f9d8-a7ee"
+                                            ]
+                                        }
+                                    },
+                                    "elements": [
+                                        {
+                                            "id": "15555561",
+                                            "elType": "widget",
+                                            "settings": {
+                                                "classes": {
+                                                    "$$type": "classes",
+                                                    "value": [
+                                                        "g-2559bed"
+                                                    ]
+                                                },
+                                                "tag": {
+                                                    "$$type": "string",
+                                                    "value": "h3"
+                                                },
+                                                "title": {
+                                                    "$$type": "escaped-html",
+                                                    "value": "Lorem ipsum sit"
+                                                }
+                                            },
+                                            "elements": [],
+                                            "widgetType": "e-heading",
+                                            "editor_settings": {
+                                                "title": "Card elevated title"
+                                            },
+                                            "version": "0.0"
+                                        },
+                                        {
+                                            "id": "3e3cc009",
+                                            "elType": "widget",
+                                            "settings": {
+                                                "classes": {
+                                                    "$$type": "classes",
+                                                    "value": [
+                                                        "g-26f6dcb"
+                                                    ]
+                                                }
+                                            },
+                                            "elements": [],
+                                            "widgetType": "e-divider",
+                                            "editor_settings": {
+                                                "title": "Card elevated divider"
+                                            },
+                                            "version": "0.0"
+                                        },
+                                        {
+                                            "id": "5f7e68c9",
+                                            "elType": "widget",
+                                            "settings": {
+                                                "classes": {
+                                                    "$$type": "classes",
+                                                    "value": [
+                                                        "g-902a70f"
+                                                    ]
+                                                },
+                                                "paragraph": {
+                                                    "$$type": "escaped-html",
+                                                    "value": "Lorem ipsum dolor sit amet consectetur. Amet suscipit maecenas vel eget. Ut leo ac egestas sit amet."
+                                                }
+                                            },
+                                            "elements": [],
+                                            "widgetType": "e-paragraph",
+                                            "editor_settings": {
+                                                "title": "Card elevated text"
+                                            },
+                                            "version": "0.0"
+                                        }
+                                    ],
+                                    "isInner": false,
+                                    "styles": {
+                                        "e-3700f9d8-a7ee": {
+                                            "id": "e-3700f9d8-a7ee",
+                                            "label": "local",
+                                            "type": "class",
+                                            "variants": [
+                                                {
+                                                    "meta": {
+                                                        "breakpoint": "desktop",
+                                                        "state": null
+                                                    },
+                                                    "props": {
+                                                        "text-align": {
+                                                            "$$type": "string",
+                                                            "value": "center"
+                                                        },
+                                                        "padding": {
+                                                            "$$type": "dimensions",
+                                                            "value": {
+                                                                "block-start": {
+                                                                    "$$type": "size",
+                                                                    "value": {
+                                                                        "size": 48,
+                                                                        "unit": "px"
+                                                                    }
+                                                                },
+                                                                "inline-end": {
+                                                                    "$$type": "size",
+                                                                    "value": {
+                                                                        "size": 32,
+                                                                        "unit": "px"
+                                                                    }
+                                                                },
+                                                                "block-end": {
+                                                                    "$$type": "size",
+                                                                    "value": {
+                                                                        "size": 48,
+                                                                        "unit": "px"
+                                                                    }
+                                                                },
+                                                                "inline-start": {
+                                                                    "$$type": "size",
+                                                                    "value": {
+                                                                        "size": 32,
+                                                                        "unit": "px"
+                                                                    }
+                                                                }
+                                                            }
+                                                        },
+                                                        "align-items": {
+                                                            "$$type": "string",
+                                                            "value": "center"
+                                                        }
+                                                    },
+                                                    "custom_css": null
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    "editor_settings": {
+                                        "title": "Card elevated"
+                                    },
+                                    "version": "0.0"
+                                }
+                            ],
+                            "isInner": false,
+                            "styles": {
+                                "e-6406e8a5-e164": {
+                                    "id": "e-6406e8a5-e164",
+                                    "label": "local",
+                                    "type": "class",
+                                    "variants": [
+                                        {
+                                            "meta": {
+                                                "breakpoint": "tablet",
+                                                "state": null
+                                            },
+                                            "props": {
+                                                "grid-template-columns": {
+                                                    "$$type": "string",
+                                                    "value": "repeat(1, 1fr)"
+                                                },
+                                                "grid-template-rows": {
+                                                    "$$type": "string",
+                                                    "value": "repeat(3, auto)"
+                                                }
+                                            },
+                                            "custom_css": null
+                                        },
+                                        {
+                                            "meta": {
+                                                "breakpoint": "desktop",
+                                                "state": null
+                                            },
+                                            "props": {
+                                                "padding": {
+                                                    "$$type": "size",
+                                                    "value": {
+                                                        "size": 0,
+                                                        "unit": "px"
+                                                    }
+                                                },
+                                                "gap": {
+                                                    "$$type": "size",
+                                                    "value": {
+                                                        "size": 30,
+                                                        "unit": "px"
+                                                    }
+                                                },
+                                                "grid-template-columns": {
+                                                    "$$type": "string",
+                                                    "value": "repeat(3, 1fr)"
+                                                },
+                                                "grid-template-rows": {
+                                                    "$$type": "string",
+                                                    "value": "repeat(1, auto)"
+                                                },
+                                                "align-items": {
+                                                    "$$type": "string",
+                                                    "value": "start"
+                                                }
+                                            },
+                                            "custom_css": null
+                                        }
+                                    ]
+                                }
+                            },
+                            "editor_settings": {
+                                "title": "SG Cards grid"
+                            },
+                            "version": "0.0"
+                        }
+                    ],
+                    "isInner": false,
+                    "styles": {
+                        "e-7accc2db-b697": {
+                            "id": "e-7accc2db-b697",
+                            "label": "local",
+                            "type": "class",
+                            "variants": [
+                                {
+                                    "meta": {
+                                        "breakpoint": "desktop",
+                                        "state": null
+                                    },
+                                    "props": {
+                                        "gap": {
+                                            "$$type": "size",
+                                            "value": {
+                                                "size": 24,
+                                                "unit": "px"
+                                            }
+                                        },
+                                        "align-items": {
+                                            "$$type": "string",
+                                            "value": "flex-start"
+                                        }
+                                    },
+                                    "custom_css": null
+                                }
+                            ]
+                        }
+                    },
+                    "editor_settings": {
+                        "title": "SG Cards container"
+                    },
+                    "version": "0.0"
+                }
+            ],
+            "isInner": false,
+            "editor_settings": {
+                "title": "SG Cards"
+            },
+            "version": "0.0"
+        },
+        {
+            "id": "43b341ca",
+            "elType": "e-flexbox",
+            "settings": {
+                "classes": {
+                    "$$type": "classes",
+                    "value": [
+                        "g-515d564",
+                        "g-9c93174"
+                    ]
+                },
+                "tag": {
+                    "$$type": "string",
+                    "value": "section"
+                }
+            },
+            "elements": [
+                {
+                    "id": "37b29edd",
+                    "elType": "e-flexbox",
+                    "settings": {
+                        "classes": {
+                            "$$type": "classes",
+                            "value": [
+                                "g-bfbe280",
+                                "e-663b3746-62ae"
+                            ]
+                        }
+                    },
+                    "elements": [
+                        {
+                            "id": "66240523",
+                            "elType": "widget",
+                            "settings": {
+                                "classes": {
+                                    "$$type": "classes",
+                                    "value": [
+                                        "g-2559bed",
+                                        "g-70c3ea7"
+                                    ]
+                                },
+                                "tag": {
+                                    "$$type": "string",
+                                    "value": "h2"
+                                },
+                                "title": {
+                                    "$$type": "escaped-html",
+                                    "value": "Applications That Drive <b>Smarter Decisions</b> ✨"
+                                }
+                            },
+                            "elements": [],
+                            "widgetType": "e-heading",
+                            "editor_settings": {
+                                "title": "SG Primary title"
+                            },
+                            "version": "0.0"
+                        }
+                    ],
+                    "isInner": false,
+                    "styles": {
+                        "e-663b3746-62ae": {
+                            "id": "e-663b3746-62ae",
+                            "label": "local",
+                            "type": "class",
+                            "variants": [
+                                {
+                                    "meta": {
+                                        "breakpoint": "desktop",
+                                        "state": null
+                                    },
+                                    "props": {
+                                        "text-align": {
+                                            "$$type": "string",
+                                            "value": "center"
+                                        },
+                                        "align-items": {
+                                            "$$type": "string",
+                                            "value": "center"
+                                        }
+                                    },
+                                    "custom_css": null
+                                }
+                            ]
+                        }
+                    },
+                    "editor_settings": {
+                        "title": "SG Primary container"
+                    },
+                    "version": "0.0"
+                }
+            ],
+            "isInner": false,
+            "editor_settings": {
+                "title": "SG Primary"
+            },
+            "version": "0.0"
+        }
+    ]
+}

@@ -1,0 +1,98 @@
+# Local WordPress for the ai-elem-child theme.
+#
+# WordPress core, plugins and uploads live in a Docker volume (fast Linux filesystem).
+# Only theme/ is mounted from the project: bind mounts from a Windows drive are ~150x slower,
+# which made every page take ~20 s with wp-env (see docs/decisions.md, R5).
+#
+# npm run wp:start  -> start containers (http://localhost:8888, admin / password)
+# npm run wp:setup  -> install WordPress, plugins and settings (safe to re-run)
+# npm run wp:cli -- <command>  -> WP-CLI, e.g. npm run wp:cli -- plugin list
+# npm run wp:stop   -> stop containers (data stays in the volumes)
+# http://localhost:8025 -> Mailpit: every email the site sends (contact form etc.) lands here.
+
+name: ai-wp-elem
+
+x-wordpress-env: &wordpress-env
+  WORDPRESS_DB_HOST: db
+  WORDPRESS_DB_NAME: wordpress
+  WORDPRESS_DB_USER: wordpress
+  WORDPRESS_DB_PASSWORD: wordpress
+  WORDPRESS_DEBUG: 1
+  WORDPRESS_CONFIG_EXTRA: |
+    define( 'WP_ENVIRONMENT_TYPE', 'local' ); // Application passwords over http (Elementor MCP).
+    define( 'WP_DEBUG_LOG', true );           // wp-content/debug.log
+    define( 'WP_DEBUG_DISPLAY', false );      // Keep notices out of REST/MCP JSON responses.
+
+services:
+  db:
+    image: mariadb:lts
+    environment:
+      MARIADB_DATABASE: wordpress
+      MARIADB_USER: wordpress
+      MARIADB_PASSWORD: wordpress
+      MARIADB_ROOT_PASSWORD: password
+    volumes:
+      - db:/var/lib/mysql
+    healthcheck:
+      test: ['CMD', 'healthcheck.sh', '--connect', '--innodb_initialized']
+      interval: 5s
+      timeout: 5s
+      retries: 20
+
+  wordpress:
+    image: wordpress:php8.3-apache
+    depends_on:
+      db:
+        condition: service_healthy
+    # Apache listens on 8888 inside the container too, so loopback requests to the site URL work.
+    ports:
+      - '8888:8888'
+    environment: *wordpress-env
+    volumes:
+      - wordpress:/var/www/html
+      - ./theme:/var/www/html/wp-content/themes/ai-elem-child
+      - ./docker/mu-plugins:/var/www/html/wp-content/mu-plugins:ro
+      - ./docker/php.ini:/usr/local/etc/php/conf.d/zz-local.ini:ro
+      - ./docker/apache/ports.conf:/etc/apache2/ports.conf:ro
+      - ./docker/apache/000-default.conf:/etc/apache2/sites-enabled/000-default.conf:ro
+
+  # Catches outgoing mail locally (SMTP on 1025, web UI on 8025). Dev only, nothing is delivered.
+  mailpit:
+    image: axllent/mailpit:v1.31.4
+    ports:
+      - '8025:8025'
+
+  # Idle container for WP-CLI: docker compose exec cli wp <command> (much faster than `run`).
+  cli:
+    image: wordpress:cli-php8.3
+    command: ['tail', '-f', '/dev/null']
+    init: true
+    # Shares the wordpress container's network: localhost:8888 is the site, db and mailpit resolve as usual.
+    network_mode: 'service:wordpress'
+    depends_on:
+      wordpress:
+        condition: service_started
+    # Same uid as www-data in the Debian-based wordpress image (the Alpine CLI image uses 82).
+    user: '33:33'
+    environment:
+      <<: *wordpress-env
+      HOME: /tmp
+      WP_CLI_CONFIG_PATH: /etc/wp-cli/config.yml
+    volumes:
+      - wordpress:/var/www/html
+      - ./theme:/var/www/html/wp-content/themes/ai-elem-child
+      - ./docker/mu-plugins:/var/www/html/wp-content/mu-plugins:ro
+      - ./docker/setup.sh:/usr/local/bin/site-setup.sh:ro
+      - ./docker/wp-cli.yml:/etc/wp-cli/config.yml:ro
+      # Exported design assets for `npm run wp:import` (design/assets is not in git).
+      - ./design/assets:/import:ro
+      # Database and uploads backups: npm run wp:backup / wp:restore (backups/ is not in git).
+      - ./backups:/backups
+      # Elementor layout and design system export for git: npm run wp:export.
+      - ./elementor:/elementor
+      # Project WP-CLI commands, outside the web root (loaded by wp-cli.yml).
+      - ./docker/wp-cli-commands.php:/usr/local/share/aiec/wp-cli-commands.php:ro
+
+volumes:
+  db:
+  wordpress:

@@ -1,0 +1,18 @@
+[
+    {
+        "term_id": 5,
+        "name": "English",
+        "slug": "en",
+        "taxonomy": "language",
+        "description": "a:3:{s:6:\"locale\";s:5:\"en_US\";s:3:\"rtl\";b:0;s:9:\"flag_code\";s:2:\"us\";}",
+        "parent": 0
+    },
+    {
+        "term_id": 8,
+        "name": "Deutsch",
+        "slug": "de",
+        "taxonomy": "language",
+        "description": "a:3:{s:6:\"locale\";s:5:\"de_DE\";s:3:\"rtl\";b:0;s:9:\"flag_code\";s:2:\"de\";}",
+        "parent": 0
+    }
+]

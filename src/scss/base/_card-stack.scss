@@ -1,0 +1,71 @@
+// Overlapping cards: Elementor class "card-stack" on the area (layout per breakpoint is set in
+// Elementor), behaviour in src/js/modules/card-stack.js. Everything here waits for .is-ready,
+// so without the script (the Elementor editor) the cards stay as built.
+// The .elementor prefix outweighs Elementor's own class and element styles, loaded after ours.
+@use '../tools' as *;
+
+.card-stack__dots {
+	display: none;
+}
+
+.elementor .card-stack.is-ready > .card--float {
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+// Wide screens: the cards overlap; the one in front can be changed by a click or focus.
+@media (min-width: 1201px) {
+	.elementor .card-stack.is-ready > .card--float:not(.is-front) {
+		cursor: pointer;
+
+		&:hover {
+			transform: translateY(-4px);
+		}
+	}
+
+	.elementor .card-stack.is-ready > .card--float.is-front {
+		z-index: 3;
+	}
+
+	// A side card brought to the front rises a little, like a card lifted from the stack.
+	.elementor .card-stack.is-ready > .card--float.is-front:not(.card-stack__main) {
+		transform: translateY(-12px);
+		box-shadow: 0 16px 42px 16px rgba(0, 0, 0, 0.06);
+	}
+}
+
+// Phones: a swipe slider with dots (looks: _slider-dots.scss); the next card peeks from the right.
+@include down(small) {
+	.elementor .card-stack.is-ready {
+		flex-direction: row;
+		align-items: stretch;
+		gap: 16px;
+		width: calc(100% + 40px); // Bleed to the screen edges (container padding 20px).
+		margin-inline: -20px;
+		padding: 4px 20px 24px; // Room for the cards' shadow.
+		overflow-x: auto;
+		scroll-snap-type: x mandatory;
+		scroll-padding-inline: 20px;
+		scrollbar-width: none;
+
+		&::-webkit-scrollbar {
+			display: none;
+		}
+
+		> .card--float {
+			flex: 0 0 85%;
+			max-width: none;
+			scroll-snap-align: start;
+		}
+	}
+
+	.card-stack__dots {
+		display: flex;
+		margin-top: -8px;
+	}
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.elementor .card-stack.is-ready > .card--float {
+		transition: none;
+	}
+}

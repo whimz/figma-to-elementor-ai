@@ -1,0 +1,138 @@
+[
+    {
+        "term_id": 12,
+        "name": "pll_6af333ba3e7a1",
+        "slug": "pll_6af333ba3e7a1",
+        "taxonomy": "post_translations",
+        "description": "a:2:{s:2:\"en\";i:49;s:2:\"de\";i:230;}",
+        "parent": 0
+    },
+    {
+        "term_id": 13,
+        "name": "pll_6af333bbe5a43",
+        "slug": "pll_6af333bbe5a43",
+        "taxonomy": "post_translations",
+        "description": "a:2:{s:2:\"en\";i:50;s:2:\"de\";i:233;}",
+        "parent": 0
+    },
+    {
+        "term_id": 14,
+        "name": "pll_6af333bd373f0",
+        "slug": "pll_6af333bd373f0",
+        "taxonomy": "post_translations",
+        "description": "a:2:{s:2:\"en\";i:33;s:2:\"de\";i:236;}",
+        "parent": 0
+    },
+    {
+        "term_id": 15,
+        "name": "pll_6af333bd6b6b8",
+        "slug": "pll_6af333bd6b6b8",
+        "taxonomy": "post_translations",
+        "description": "a:2:{s:2:\"en\";i:36;s:2:\"de\";i:239;}",
+        "parent": 0
+    },
+    {
+        "term_id": 18,
+        "name": "pll_6af3351e398cd",
+        "slug": "pll_6af3351e398cd",
+        "taxonomy": "post_translations",
+        "description": "a:2:{s:2:\"en\";i:48;s:2:\"de\";i:227;}",
+        "parent": 0
+    },
+    {
+        "term_id": 20,
+        "name": "pll_6af7991e15226",
+        "slug": "pll_6af7991e15226",
+        "taxonomy": "post_translations",
+        "description": "a:2:{s:2:\"en\";i:306;s:2:\"de\";i:327;}",
+        "parent": 0
+    },
+    {
+        "term_id": 34,
+        "name": "pll_6af79cc253a6c",
+        "slug": "pll_6af79cc253a6c",
+        "taxonomy": "post_translations",
+        "description": "a:2:{s:2:\"en\";i:341;s:2:\"de\";i:342;}",
+        "parent": 0
+    },
+    {
+        "term_id": 35,
+        "name": "pll_6af79cc2ad8dd",
+        "slug": "pll_6af79cc2ad8dd",
+        "taxonomy": "post_translations",
+        "description": "a:2:{s:2:\"en\";i:343;s:2:\"de\";i:344;}",
+        "parent": 0
+    },
+    {
+        "term_id": 36,
+        "name": "pll_6af79cc30cc10",
+        "slug": "pll_6af79cc30cc10",
+        "taxonomy": "post_translations",
+        "description": "a:2:{s:2:\"en\";i:345;s:2:\"de\";i:346;}",
+        "parent": 0
+    },
+    {
+        "term_id": 37,
+        "name": "pll_6af79cc36445a",
+        "slug": "pll_6af79cc36445a",
+        "taxonomy": "post_translations",
+        "description": "a:2:{s:2:\"en\";i:347;s:2:\"de\";i:348;}",
+        "parent": 0
+    },
+    {
+        "term_id": 38,
+        "name": "pll_6af79cc3d4770",
+        "slug": "pll_6af79cc3d4770",
+        "taxonomy": "post_translations",
+        "description": "a:2:{s:2:\"en\";i:349;s:2:\"de\";i:350;}",
+        "parent": 0
+    },
+    {
+        "term_id": 39,
+        "name": "pll_6af79cc44b183",
+        "slug": "pll_6af79cc44b183",
+        "taxonomy": "post_translations",
+        "description": "a:2:{s:2:\"en\";i:351;s:2:\"de\";i:352;}",
+        "parent": 0
+    },
+    {
+        "term_id": 40,
+        "name": "pll_6af79cc4942e7",
+        "slug": "pll_6af79cc4942e7",
+        "taxonomy": "post_translations",
+        "description": "a:2:{s:2:\"en\";i:353;s:2:\"de\";i:354;}",
+        "parent": 0
+    },
+    {
+        "term_id": 41,
+        "name": "pll_6af79cc4d6872",
+        "slug": "pll_6af79cc4d6872",
+        "taxonomy": "post_translations",
+        "description": "a:2:{s:2:\"en\";i:355;s:2:\"de\";i:356;}",
+        "parent": 0
+    },
+    {
+        "term_id": 42,
+        "name": "pll_6af79cc529eea",
+        "slug": "pll_6af79cc529eea",
+        "taxonomy": "post_translations",
+        "description": "a:2:{s:2:\"en\";i:357;s:2:\"de\";i:358;}",
+        "parent": 0
+    },
+    {
+        "term_id": 43,
+        "name": "pll_6af79f0d2802d",
+        "slug": "pll_6af79f0d2802d",
+        "taxonomy": "post_translations",
+        "description": "a:2:{s:2:\"en\";i:359;s:2:\"de\";i:380;}",
+        "parent": 0
+    },
+    {
+        "term_id": 44,
+        "name": "pll_6af79f0ea353a",
+        "slug": "pll_6af79f0ea353a",
+        "taxonomy": "post_translations",
+        "description": "a:2:{s:2:\"en\";i:361;s:2:\"de\";i:382;}",
+        "parent": 0
+    }
+]

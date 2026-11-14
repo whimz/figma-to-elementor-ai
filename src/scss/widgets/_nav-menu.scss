@@ -1,0 +1,339 @@
+// Nav Menu widget (theme/widgets/nav-menu.php) and the sticky site header around it.
+@use '../tools' as *;
+
+$ink-ease: cubic-bezier(0.65, 0, 0.35, 1); // closing, toggle icon
+$ink-spread: cubic-bezier(0.22, 1, 0.36, 1); // opening: fast start like a drop hitting paper
+$ink-open: 0.6s;
+$ink-close: 0.4s;
+
+// Compact (burger) mode: below the tablet breakpoint, or at any width when the menu does not fit
+// on one line — nav-menu.js then adds .is-compact to the header wrapper.
+@mixin compact {
+	@include down(tablet) {
+		@content;
+	}
+
+	.aiec-site-header.is-compact & {
+		@content;
+	}
+}
+
+// Radius of the "ink drop" that reveals the menu; registered so it can be transitioned.
+@property --aiec-ink {
+	syntax: '<length>';
+	inherits: false;
+	initial-value: 0px;
+}
+
+// Sticky header: the theme wrapper (template-parts/header.php), not the Elementor element,
+// because sticky positioning is limited by the parent box.
+.aiec-site-header {
+	position: sticky;
+	top: 0;
+	z-index: 100;
+
+	// The bar is white in the design; blur shows through when the page scrolls under it.
+	> .elementor > :first-child {
+		background-color: rgba(254, 254, 254, 0.92);
+		backdrop-filter: blur(13.5px);
+	}
+}
+
+// backdrop-filter makes the bar the containing block for position: fixed, which would trap
+// the full-screen menu inside the bar. The open menu covers the page anyway, so no blur then.
+.aiec-nav-open .aiec-site-header > .elementor > :first-child {
+	background-color: var(--color-white, #fff);
+	backdrop-filter: none;
+}
+
+// Phones: a smaller logo leaves room for the button and the toggle down to 320px.
+// Overrides the logo's own size from Elementor (117 × 35), hence the extra class.
+@include down(small) {
+	.aiec-site-header .elementor .e-svg-base {
+		width: 96px;
+		height: 29px;
+	}
+}
+
+.admin-bar .aiec-site-header {
+	top: 32px;
+
+	@media (max-width: 782px) {
+		top: 46px;
+	}
+}
+
+// No page scroll behind the open menu.
+.aiec-nav-open {
+	overflow: hidden;
+}
+
+// Compact mode on wide screens: logo left, then button and toggle (Elementor's own tablet styles
+// do the same below 1024px). The 34px toggle fits the desktop bar, so its height stays 67px.
+.aiec-site-header.is-compact header {
+	justify-content: flex-start;
+	gap: 12px;
+
+	> :first-child {
+		margin-right: auto;
+	}
+}
+
+// The widget fills the space between the logo and the button on desktop.
+.elementor-widget-aiec-nav-menu {
+	flex: 1 1 auto;
+	min-width: 0;
+
+	// Static positioning so the panel is placed under the whole header bar, not under the toggle.
+	@include compact {
+		position: static;
+		flex: 0 0 auto;
+		order: 3;
+	}
+}
+
+.aiec-nav {
+	@include compact {
+		position: static;
+	}
+}
+
+// Desktop: one line of links with an underline that grows on hover and stays for the current page.
+.aiec-nav__list {
+	display: flex;
+	align-items: center;
+	gap: 24px;
+	margin: 0;
+	padding: 0 16px;
+	list-style: none;
+
+	a {
+		@include menu-link;
+
+		&[aria-current='page'] {
+			color: var(--color-black, #0e0e0e);
+
+			&::after {
+				width: 100%;
+			}
+		}
+	}
+}
+
+// Toggle: hidden on desktop. The .aiec-nav prefix beats Hello's reset
+// (button:hover/:focus with #c36 and a higher specificity).
+.aiec-nav .aiec-nav__toggle {
+	display: none;
+
+	@include compact {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		width: 34px; // Square, as tall as the header button (Get Started, 34px).
+		height: 34px;
+		padding: 0;
+		border: 0;
+		border-radius: 8px;
+		background: transparent;
+		color: var(--color-heading, #2d2d2d);
+		cursor: pointer;
+
+		&:hover,
+		&:focus {
+			background-color: rgba(74, 0, 230, 0.06);
+			color: var(--color-heading, #2d2d2d);
+		}
+	}
+}
+
+.aiec-nav__toggle-label {
+	@include visually-hidden;
+}
+
+// Three lines that turn into a cross when open.
+.aiec-nav__toggle-icon,
+.aiec-nav__toggle-icon::before,
+.aiec-nav__toggle-icon::after {
+	display: block;
+	width: 22px;
+	height: 2px;
+	border-radius: 2px;
+	background-color: currentColor;
+	transition: transform 0.3s $ink-ease, background-color 0.2s;
+}
+
+.aiec-nav__toggle-icon {
+	position: relative;
+
+	&::before,
+	&::after {
+		content: '';
+		position: absolute;
+		left: 0;
+	}
+
+	&::before {
+		top: -7px;
+	}
+
+	&::after {
+		top: 7px;
+	}
+}
+
+.aiec-nav.is-open .aiec-nav__toggle-icon {
+	background-color: transparent;
+
+	&::before {
+		transform: translateY(7px) rotate(45deg);
+	}
+
+	&::after {
+		transform: translateY(-7px) rotate(-45deg);
+	}
+}
+
+// Compact panel under the header bar (tablets, and wide screens when the menu does not fit):
+// opens instantly, white with a light orange accent edge. Never taller than the screen:
+// with many items it scrolls.
+.aiec-nav__list {
+	@include compact {
+		position: absolute;
+		top: 100%;
+		left: 0;
+		right: 0;
+		flex-direction: column;
+		align-items: stretch;
+		gap: 0;
+		max-height: calc(100dvh - var(--aiec-nav-top, 64px));
+		overflow-y: auto;
+		overscroll-behavior: contain;
+		padding: 8px 32px 16px;
+		border-top: 1px solid var(--color-secondary-light, #fedeac);
+		border-bottom: 2px solid var(--color-secondary-light, #fedeac);
+		background-color: var(--color-white, #fff);
+		box-shadow: 0 16px 24px rgba(0, 0, 0, 0.06);
+		visibility: hidden;
+
+		a {
+			display: flex;
+			align-items: center;
+			min-height: 48px;
+			padding: 0;
+			border-bottom: 1px solid var(--color-border, #e7e7e7);
+			white-space: normal;
+
+			&::after {
+				display: none;
+			}
+
+			&:hover {
+				color: var(--color-primary, #4a00e6);
+			}
+
+			&[aria-current='page'] {
+				font-weight: 700;
+				color: var(--color-primary, #4a00e6);
+			}
+		}
+
+		li:last-child a {
+			border-bottom: 0;
+		}
+	}
+}
+
+.aiec-nav.is-open .aiec-nav__list {
+	@include compact {
+		visibility: visible;
+	}
+}
+
+@include down(mobile) {
+	.aiec-nav__list {
+		padding: 8px 20px 16px;
+	}
+}
+
+// Phones: the menu fills the whole screen under the header bar, items centered both ways.
+// Revealed by an "ink drop": a light circle with an orange leading edge grows from the toggle
+// (origin and radius are set by nav-menu.js) and shrinks back into it on close.
+@include down(small) {
+	.aiec-nav__list {
+		position: fixed;
+		top: var(--aiec-nav-top, 64px);
+		bottom: 0;
+		max-height: none;
+		padding: 24px 20px;
+		border: 0;
+		box-shadow: none;
+		background: radial-gradient(
+			circle at var(--aiec-ink-x, 100%) var(--aiec-ink-y, 0),
+			var(--color-surface, #f7f7f7) calc(var(--aiec-ink) - 40px),
+			var(--color-secondary, #fdb048) calc(var(--aiec-ink) - 6px)
+		);
+		clip-path: circle(var(--aiec-ink) at var(--aiec-ink-x, 100%) var(--aiec-ink-y, 0));
+		transition: --aiec-ink $ink-close $ink-ease, visibility 0s linear $ink-close;
+
+		// Auto margins center the items vertically and still let a long menu scroll from the top
+		// (justify-content: center would cut off the first items).
+		li {
+			opacity: 0;
+			transform: translateY(12px);
+			transition: opacity 0.15s ease, transform 0.15s ease;
+		}
+
+		li:first-child {
+			margin-top: auto;
+		}
+
+		li:last-child {
+			margin-bottom: auto;
+		}
+
+		a {
+			justify-content: center;
+			min-height: 56px;
+			border-bottom: 0;
+			font-size: 20px;
+			line-height: 28px;
+			text-align: center;
+		}
+	}
+
+	.aiec-nav.is-open .aiec-nav__list {
+		--aiec-ink: var(--aiec-ink-r, 150vmax);
+		transition: --aiec-ink $ink-open $ink-spread, visibility 0s;
+
+		// Items rise one after another once the ink has spread.
+		li {
+			opacity: 1;
+			transform: none;
+			transition:
+				opacity 0.35s ease calc(0.18s + var(--aiec-i, 0) * 0.05s),
+				transform 0.45s cubic-bezier(0.2, 0.8, 0.2, 1) calc(0.18s + var(--aiec-i, 0) * 0.05s);
+		}
+	}
+}
+
+// Respect the system "reduce motion" setting: the menu just appears.
+@media (prefers-reduced-motion: reduce) {
+	.aiec-nav__list,
+	.aiec-nav__list li,
+	.aiec-nav__toggle-icon,
+	.aiec-nav__toggle-icon::before,
+	.aiec-nav__toggle-icon::after {
+		transition: none !important;
+	}
+}
+
+// Editor-only warning from the widget (sub-items are not displayed).
+.aiec-nav__notice {
+	margin: 0 0 8px;
+	padding: 8px 12px;
+	border-left: 3px solid var(--color-secondary, #fdb048);
+	background-color: #fff8ec;
+	font-size: 13px;
+	line-height: 18px;
+	color: var(--color-heading, #2d2d2d);
+}

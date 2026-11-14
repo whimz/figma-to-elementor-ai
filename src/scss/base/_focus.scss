@@ -1,0 +1,14 @@
+// Visible keyboard focus for every interactive element.
+// Elementor V4 classes support only :hover/:focus/:active, so :focus-visible lives here.
+// Specific enough to win over Hello's reset (a:focus-visible { outline: 2px solid #000 }, and the
+// stronger [tabindex]:not([tabindex="-1"]):focus-visible: hence the same :not() here).
+
+body :is(a, button, input, select, textarea, summary, [tabindex]:not([tabindex='-1'])):focus-visible {
+	outline: 2px solid var(--color-primary, #4a00e6);
+	outline-offset: 2px;
+}
+
+// On the purple background (Elementor class bg-primary) the purple ring would vanish.
+body .bg-primary :is(a, button, input, select, textarea, summary, [tabindex]:not([tabindex='-1'])):focus-visible {
+	outline-color: var(--color-white, #fff);
+}

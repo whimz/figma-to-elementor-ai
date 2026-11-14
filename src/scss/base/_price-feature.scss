@@ -1,0 +1,19 @@
+// Price plan features (Elementor class "price-feature" on each item paragraph; text, colour and
+// the 27 px indent are set in Elementor). The kit's bullet — a softly blurred purple dot — is a
+// pseudo-element, which V4 styles cannot add.
+
+.elementor .price-feature {
+	position: relative;
+
+	&::before {
+		content: '';
+		position: absolute;
+		top: 3.5px;
+		left: 0;
+		width: 17px;
+		height: 17px;
+		border-radius: 50%;
+		background-color: var(--color-primary, #4a00e6);
+		filter: blur(1.4px);
+	}
+}

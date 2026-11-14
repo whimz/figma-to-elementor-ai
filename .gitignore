@@ -1,0 +1,35 @@
+# Dependencies
+node_modules/
+
+# Build output (rebuilt by Gulp)
+theme/assets/
+
+# Distributables
+dist/
+*.zip
+
+# Local WordPress data: DB dumps and migration backups
+backups/*
+!backups/.gitkeep
+*.sql
+*.sql.gz
+*.wpress
+
+# Design files are heavy — keep only links and notes
+design/*
+!design/*.md
+
+# Secrets and local settings
+.env
+.env.*
+.vscode/sftp.json
+.claude/settings.local.json
+
+# Logs
+*.log
+error_log
+
+# OS / editor junk
+.DS_Store
+Thumbs.db
+~$*

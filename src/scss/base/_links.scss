@@ -1,0 +1,19 @@
+// Contact links (Elementor class `link-underline` on a Paragraph with a link, e.g. phone and email
+// in the footer). The class sets the type and colors; the purple underline and the touch area
+// are here, since V4 styles have no text-decoration color or offset.
+@use '../tools' as *;
+
+.link-underline {
+	text-decoration: underline;
+	text-decoration-color: var(--color-primary, #4a00e6);
+	text-decoration-thickness: 1px;
+	text-underline-offset: 4px;
+	transition: color 0.2s;
+
+	// Phones: a 44px tall touch area; vertical padding on an inline link does not move the layout.
+	@include down(mobile) {
+		.elementor & > a {
+			padding-block: 13px;
+		}
+	}
+}

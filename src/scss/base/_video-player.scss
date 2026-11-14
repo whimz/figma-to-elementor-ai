@@ -1,0 +1,41 @@
+// "How it works" video: Elementor classes "video-player" (box) and "video-play" (round button), layout of
+// the video itself is set in Elementor; behaviour in src/js/modules/video-player.js.
+// Without the script the button lets clicks through to the native video controls.
+// The .elementor prefix outweighs Elementor's own class and element styles, loaded after ours.
+
+// Shown at once (so the script can give it focus when the clip ends), hidden after the fade-out.
+.elementor .video-player .video-play {
+	pointer-events: none;
+	transition: transform 0.2s ease, opacity 0.2s ease, visibility 0s;
+}
+
+.elementor .video-player.is-ready .video-play {
+	cursor: pointer;
+	pointer-events: auto;
+
+	&:hover {
+		transform: scale(1.06);
+	}
+
+	&:focus-visible {
+		outline: 2px solid var(--color-white, #fff);
+		outline-offset: 4px;
+	}
+}
+
+.elementor .video-player.is-playing .video-play {
+	opacity: 0;
+	pointer-events: none;
+	transition: transform 0.2s ease, opacity 0.2s ease, visibility 0s linear 0.2s;
+	visibility: hidden;
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.elementor .video-player .video-play {
+		transition: none;
+	}
+
+	.elementor .video-player.is-ready .video-play:hover {
+		transform: none;
+	}
+}

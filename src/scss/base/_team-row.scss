@@ -1,0 +1,37 @@
+// Team cards (About Us): Elementor classes "team-row" / "team-card" (layout per breakpoint is set in
+// Elementor), on phones a swipe slider with dots (src/js/modules/team-row.js, dot looks in
+// _slider-dots.scss). Everything waits for .is-ready, so without the script the cards stay as built.
+// The .elementor prefix outweighs Elementor's own class and element styles, loaded after ours.
+@use '../tools' as *;
+
+.team-row__dots {
+	display: none;
+}
+
+// Phones: one card and the edge of the next; the row bleeds to the screen edges.
+@include down(small) {
+	.elementor .team-row.is-ready {
+		flex-wrap: nowrap;
+		gap: 16px;
+		width: calc(100% + 40px); // Container padding 20px on each side.
+		margin-inline: -20px;
+		padding: 10px 20px 8px;
+		overflow-x: auto;
+		scroll-snap-type: x mandatory;
+		scroll-padding-inline: 20px;
+		scrollbar-width: none;
+
+		&::-webkit-scrollbar {
+			display: none;
+		}
+
+		> .team-card {
+			flex: 0 0 85%;
+			scroll-snap-align: start;
+		}
+	}
+
+	.team-row__dots {
+		display: flex;
+	}
+}

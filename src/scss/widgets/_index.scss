@@ -1,0 +1,8 @@
+// Widgets: styles for custom Elementor widgets from theme/widgets/.
+// One partial per widget, forwarded here.
+
+@forward 'nav-menu';
+@forward 'menu-list';
+@forward 'contact-form';
+@forward 'company-info';
+@forward 'blog';

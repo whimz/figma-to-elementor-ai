@@ -1,0 +1,124 @@
+// Company Info widget (theme/widgets/company-info.php): phone, email, social links or addresses from
+// the admin page "Company Info". The looks repeat the atomic elements the widget replaced (decisions.md D36):
+// links as the class `link-underline`, icons as the Contact page's SVG icons, addresses as in C3.
+// The addresses' type, color, gap and width can be changed per widget in Elementor (Style tab).
+@use '../tools' as *;
+
+// As wide as its content, like the elements it replaced.
+.elementor-widget-aiec-company-info {
+	flex: 0 0 auto;
+	width: auto;
+	max-width: 100%;
+}
+
+// Phone and email: 14/20 semibold, purple underline, purple on hover.
+.aiec-company-info__link {
+	margin: 0;
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 20px;
+
+	a {
+		color: var(--color-heading, #2d2d2d);
+		text-decoration: underline;
+		text-decoration-color: var(--color-primary, #4a00e6);
+		text-decoration-thickness: 1px;
+		text-underline-offset: 4px;
+		transition: color 0.2s;
+
+		&:hover {
+			color: var(--color-primary, #4a00e6);
+		}
+
+		// Phones: a 44px tall touch area; vertical padding on an inline link does not move the layout.
+		@include down(mobile) {
+			padding-block: 13px;
+		}
+	}
+}
+
+// Social links: 24px icons, muted until hovered.
+.aiec-company-info__socials {
+	display: flex;
+	align-items: center;
+	gap: 24px;
+	margin: 0;
+	padding: 12px 0;
+	list-style: none;
+
+	@include down(tablet) {
+		padding: 0;
+	}
+
+	a {
+		display: block;
+		color: var(--color-accent, #77408c);
+		opacity: 0.7;
+		transition: opacity 0.2s;
+
+		&:hover,
+		&:focus-visible {
+			opacity: 1;
+		}
+	}
+
+	svg {
+		display: block;
+		width: 24px;
+		height: 24px;
+	}
+}
+
+// Addresses: a list of <address> blocks with an optional map pin.
+.aiec-company-info__addresses {
+	display: flex;
+	flex-direction: column;
+	gap: 35px;
+
+	@include down(tablet) {
+		gap: 24px;
+	}
+}
+
+.aiec-company-info__address {
+	display: flex;
+	align-items: flex-start;
+	gap: 7px;
+	font-size: 24px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 32px;
+	color: var(--color-dark-surface, #2a2a2a);
+
+	@include down(tablet) {
+		font-size: 20px;
+		line-height: 28px;
+	}
+
+	@include down(mobile) {
+		font-size: 18px;
+		line-height: 26px;
+	}
+
+	svg {
+		flex: 0 0 auto;
+		width: 24px;
+		height: 24px;
+		margin-top: 4px;
+		color: var(--color-text, #191919);
+	}
+}
+
+// Editor only: shown when the item is empty in Company Info.
+.aiec-company-info__notice {
+	margin: 0;
+	font-size: 12px;
+	color: var(--color-muted, #6d6d6d);
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.aiec-company-info__link a,
+	.aiec-company-info__socials a {
+		transition: none;
+	}
+}

@@ -1,0 +1,10 @@
+// Site footer (Site Part "Footer"). The corner decor is the footer's background image in Elementor;
+// V4 styles cannot remove a background image at one breakpoint, so phones drop it here
+// (on a narrow screen it would sit under the back-to-top button and the copyright).
+@use '../tools' as *;
+
+@include down(mobile) {
+	.aiec-site-footer .elementor footer {
+		background-image: none;
+	}
+}

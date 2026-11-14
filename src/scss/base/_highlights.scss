@@ -1,0 +1,23 @@
+// Highlighted words in headings, as in the design ("Simplify Your Crypto Taxes with Our Expertise").
+// Elementor keeps inline tags in heading text but strips attributes, so highlights are tag-based:
+//   <strong> (toolbar Bold)   — primary, purple
+//   <em>     (toolbar Italic) — secondary, orange; not italic
+//   <b>                       — plain bold in the heading's own color ("Smarter Decisions")
+
+.elementor :is(h1, h2, h3, h4, h5, h6) {
+	strong {
+		font-weight: 700;
+		color: var(--color-primary, #4a00e6);
+	}
+
+	em {
+		font-style: normal;
+		font-weight: 700;
+		// Darker orange for text: #fdb048 on white is 1.83:1, below the 3:1 large-text minimum.
+		color: var(--color-secondary-text, #cc7f0c);
+	}
+
+	b {
+		font-weight: 700;
+	}
+}

@@ -1,0 +1,64 @@
+// Menu List widget (theme/widgets/menu-list.php): a plain vertical list of links, e.g. footer columns.
+@use '../tools' as *;
+
+// In a row of columns the widget is as wide as its links; on phones the columns share the row.
+.elementor-widget-aiec-menu-list {
+	flex: 0 0 auto;
+	width: auto;
+
+	@include down(mobile) {
+		flex: 1 1 0;
+		min-width: 0;
+	}
+}
+
+.aiec-menu-list__items {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 8px;
+	margin: 0;
+	padding: 0 16px;
+	list-style: none;
+
+	a {
+		@include menu-link;
+	}
+
+	// Tablets and phones: the columns sit under the logo, so the text lines up with it.
+	@include down(tablet) {
+		padding: 0;
+
+		a {
+			padding-left: 0;
+		}
+	}
+
+	// Phones: 44px touch targets, long items wrap instead of overflowing the column.
+	@include down(mobile) {
+		gap: 0;
+
+		a {
+			display: inline-flex;
+			align-items: center;
+			min-height: 44px;
+			padding: 0 12px 0 0;
+			white-space: normal;
+
+			&::after {
+				bottom: 6px;
+			}
+		}
+	}
+}
+
+// Editor-only warning from the widget (no menu selected, or sub-items are not displayed).
+.aiec-menu-list__notice {
+	margin: 0 0 8px;
+	padding: 8px 12px;
+	border-left: 3px solid var(--color-secondary, #fdb048);
+	background-color: #fff8ec;
+	font-size: 13px;
+	line-height: 18px;
+	color: var(--color-heading, #2d2d2d);
+}

@@ -1,0 +1,9 @@
+// Breakpoints mirror Elementor defaults (Site Settings > Layout > Breakpoints).
+// Keep them in sync if the breakpoints are changed in Elementor.
+
+$breakpoints: (
+	small: 576px, // Theme-only (not in Elementor): phones, e.g. the full-screen menu.
+	mobile: 767px,
+	tablet: 1024px,
+	tablet-extra: 1200px, // Elementor's Tablet Extra, enabled in the kit (decisions.md D21).
+);

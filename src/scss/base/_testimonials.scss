@@ -1,0 +1,131 @@
+// Testimonials carousel: Elementor class "testimonial-carousel" on the row, "testimonial" on each
+// item (the plain layout, wrapped cards, is set in Elementor); behaviour in
+// src/js/modules/testimonials.js. Everything here waits for .is-ready, so without the script
+// (the Elementor editor) the cards stay as built.
+// The .elementor prefix outweighs Elementor's own class and element styles, loaded after ours.
+@use '../tools' as *;
+
+$move-easing: cubic-bezier(0.22, 0.61, 0.36, 1);
+
+.testimonial-carousel__dots {
+	display: none;
+}
+
+// Wide screens: coverflow, the row overflows the screen on both sides. As in the kit, the
+// neighbours are scaled to 90% and the next ones to 75%; the negative margins take back the space
+// they no longer fill, so the visible gaps stay 64px.
+@include up(tablet) {
+	.elementor .testimonial-carousel.is-ready {
+		flex-wrap: nowrap;
+		gap: 64px;
+		overflow: clip; // Not a scroll container: keyboard focus cannot shift the row.
+
+		> .testimonial {
+			flex: 0 0 397px;
+			order: var(--testimonial-order, 0);
+			transform-origin: 50% 100%;
+			transition: scale 0.5s $move-easing, opacity 0.5s ease;
+			cursor: pointer;
+
+			&:focus-visible {
+				border-radius: 48px;
+				outline-offset: 8px;
+			}
+		}
+
+		> .testimonial[data-distance='0'] {
+			cursor: auto;
+		}
+
+		> .testimonial[data-distance='1'] {
+			margin-inline: -19.85px;
+			scale: 0.9;
+			opacity: 0.6;
+
+			&:hover {
+				opacity: 0.8;
+			}
+		}
+
+		> .testimonial[data-distance='2'],
+		> .testimonial[data-distance='3'] {
+			margin-inline: -49.625px;
+			scale: 0.75;
+			opacity: 0.3;
+
+			&:hover {
+				opacity: 0.5;
+			}
+		}
+
+		// Further away: off the kit's five places, out of sight even on wide screens.
+		> .testimonial[data-distance='3'] {
+			opacity: 0;
+		}
+
+		// The extra place of an even number (see the script): out of the row, past its right edge.
+		> .testimonial[data-spare] {
+			position: absolute;
+			inset-inline-start: 100%;
+		}
+	}
+}
+
+// Tablets and phones: a swipe slider with dots (looks: _slider-dots.scss), two testimonials per
+// screen, one with the next peeking on small phones.
+@include down(tablet) {
+	.elementor .testimonial-carousel.is-ready {
+		flex-wrap: nowrap;
+		justify-content: flex-start;
+		align-items: stretch;
+		overflow-x: auto;
+		scroll-snap-type: x mandatory;
+		scroll-padding-inline: 32px; // = the row's side padding (Elementor).
+		scrollbar-width: none;
+
+		&::-webkit-scrollbar {
+			display: none;
+		}
+
+		> .testimonial {
+			flex: 0 0 calc((100% - 24px) / 2);
+			scroll-snap-align: start;
+		}
+
+		// Equal boxes in a row: the quote starts at the top.
+		.testimonial-card {
+			justify-content: flex-start;
+		}
+	}
+
+	.testimonial-carousel__dots {
+		display: flex;
+		margin-top: -24px; // Section gap 48 → 24 under the row.
+	}
+}
+
+@include down(mobile) {
+	.elementor .testimonial-carousel.is-ready {
+		scroll-padding-inline: 20px;
+
+		> .testimonial {
+			flex-basis: calc((100% - 20px) / 2);
+		}
+	}
+
+	.testimonial-carousel__dots {
+		margin-top: -16px; // Section gap 32 → 16.
+	}
+}
+
+@include down(small) {
+	.elementor .testimonial-carousel.is-ready > .testimonial {
+		flex-basis: 85%;
+	}
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.elementor .testimonial-carousel.is-ready > .testimonial {
+		transition: none;
+	}
+}

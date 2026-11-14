@@ -1,0 +1,178 @@
+{
+    "e-gv-d1ee2b8": {
+        "type": "global-color-variable",
+        "label": "color-primary",
+        "value": "#4a00e6",
+        "order": 1,
+        "created_at": "2026-10-17 17:33:19",
+        "updated_at": "2026-10-17 17:33:19"
+    },
+    "e-gv-792399d": {
+        "type": "global-color-variable",
+        "label": "color-primary-hover",
+        "value": "#3b00b8",
+        "order": 2,
+        "created_at": "2026-10-17 17:33:19",
+        "updated_at": "2026-10-17 17:33:19"
+    },
+    "e-gv-e16f63d": {
+        "type": "global-color-variable",
+        "label": "color-primary-soft",
+        "value": "rgba(74, 0, 230, 0.4)",
+        "order": 3,
+        "created_at": "2026-10-17 17:33:19",
+        "updated_at": "2026-10-17 17:33:19"
+    },
+    "e-gv-24231e2": {
+        "type": "global-color-variable",
+        "label": "color-secondary",
+        "value": "#fdb048",
+        "order": 4,
+        "created_at": "2026-10-17 17:33:19",
+        "updated_at": "2026-10-17 17:33:19"
+    },
+    "e-gv-00ffdec": {
+        "type": "global-color-variable",
+        "label": "color-secondary-text",
+        "value": "#cc7f0c",
+        "order": 5,
+        "created_at": "2026-10-17 17:33:19",
+        "updated_at": "2026-10-17 17:33:19"
+    },
+    "e-gv-9a618ee": {
+        "type": "global-color-variable",
+        "label": "color-secondary-light",
+        "value": "#fedeac",
+        "order": 6,
+        "created_at": "2026-10-17 17:33:19",
+        "updated_at": "2026-10-17 17:33:19"
+    },
+    "e-gv-50dc762": {
+        "type": "global-color-variable",
+        "label": "color-accent",
+        "value": "#77408c",
+        "order": 7,
+        "created_at": "2026-10-17 17:33:19",
+        "updated_at": "2026-10-17 17:33:19"
+    },
+    "e-gv-cc746d4": {
+        "type": "global-color-variable",
+        "label": "color-heading",
+        "value": "#2d2d2d",
+        "order": 8,
+        "created_at": "2026-10-17 17:33:19",
+        "updated_at": "2026-10-17 17:33:19"
+    },
+    "e-gv-8773d83": {
+        "type": "global-color-variable",
+        "label": "color-text",
+        "value": "#191919",
+        "order": 9,
+        "created_at": "2026-10-17 17:33:19",
+        "updated_at": "2026-10-17 17:33:19"
+    },
+    "e-gv-18d8775": {
+        "type": "global-color-variable",
+        "label": "color-black",
+        "value": "#0e0e0e",
+        "order": 10,
+        "created_at": "2026-10-17 17:33:19",
+        "updated_at": "2026-10-17 17:33:19"
+    },
+    "e-gv-2a8d524": {
+        "type": "global-color-variable",
+        "label": "color-gray-700",
+        "value": "#4f4f4f",
+        "order": 11,
+        "created_at": "2026-10-17 17:33:19",
+        "updated_at": "2026-10-17 17:33:19"
+    },
+    "e-gv-71caa99": {
+        "type": "global-color-variable",
+        "label": "color-body",
+        "value": "#5d5d5d",
+        "order": 12,
+        "created_at": "2026-10-17 17:33:19",
+        "updated_at": "2026-10-17 17:33:19"
+    },
+    "e-gv-96f26a9": {
+        "type": "global-color-variable",
+        "label": "color-muted",
+        "value": "#6d6d6d",
+        "order": 13,
+        "created_at": "2026-10-17 17:33:19",
+        "updated_at": "2026-10-17 17:33:19"
+    },
+    "e-gv-085c931": {
+        "type": "global-color-variable",
+        "label": "color-placeholder",
+        "value": "#888888",
+        "order": 14,
+        "created_at": "2026-10-17 17:33:19",
+        "updated_at": "2026-10-17 17:33:19"
+    },
+    "e-gv-434f1b3": {
+        "type": "global-color-variable",
+        "label": "color-dark-surface",
+        "value": "#2a2a2a",
+        "order": 15,
+        "created_at": "2026-10-17 17:33:19",
+        "updated_at": "2026-10-17 17:33:19"
+    },
+    "e-gv-a0f759b": {
+        "type": "global-color-variable",
+        "label": "color-on-dark",
+        "value": "#f6f6f6",
+        "order": 16,
+        "created_at": "2026-10-17 17:33:19",
+        "updated_at": "2026-10-17 17:33:19"
+    },
+    "e-gv-44d4cd5": {
+        "type": "global-color-variable",
+        "label": "color-surface",
+        "value": "#f7f7f7",
+        "order": 17,
+        "created_at": "2026-10-17 17:33:19",
+        "updated_at": "2026-10-17 17:33:19"
+    },
+    "e-gv-7da4a03": {
+        "type": "global-color-variable",
+        "label": "color-white",
+        "value": "#ffffff",
+        "order": 18,
+        "created_at": "2026-10-17 17:33:19",
+        "updated_at": "2026-10-17 17:33:19"
+    },
+    "e-gv-87fc8d8": {
+        "type": "global-color-variable",
+        "label": "color-border",
+        "value": "#e7e7e7",
+        "order": 19,
+        "created_at": "2026-10-17 17:33:19",
+        "updated_at": "2026-10-17 17:33:19"
+    },
+    "e-gv-4fd0d4f": {
+        "type": "global-color-variable",
+        "label": "color-field-border",
+        "value": "#d1d1d1",
+        "order": 20,
+        "created_at": "2026-10-17 17:33:19",
+        "updated_at": "2026-10-17 17:33:19"
+    },
+    "e-gv-c063266": {
+        "type": "global-font-variable",
+        "label": "font-primary",
+        "value": "Quicksand",
+        "order": 21,
+        "created_at": "2026-10-17 17:33:19",
+        "updated_at": "2026-10-17 17:33:19"
+    },
+    "e-gv-7b58af7": {
+        "type": "global-color-variable",
+        "label": "color-gray-900",
+        "value": "#3d3d3d",
+        "order": 22,
+        "created_at": "2026-10-17 18:37:46",
+        "updated_at": "2026-10-17 18:37:46"
+    }
+}

@@ -1,0 +1,25 @@
+// In-page anchors: room for the sticky header so targets do not hide under it, and smooth
+// scrolling unless the user prefers reduced motion. Links to "#top" (the footer back-to-top
+// button) scroll to the top of the page natively, no target element needed.
+// Smooth scrolling starts with the first click, tap or key press (html.smooth-scroll,
+// src/js/modules/smooth-scroll.js): a link from another page (/#section) then jumps straight to the
+// section and stays there while the web font swaps in. Elementor sets `html { scroll-behavior: smooth }`
+// for the whole page (custom-frontend.css), so the instant start overrides it.
+html {
+	scroll-padding-top: 96px;
+}
+
+// The WordPress admin bar pushes the sticky header down.
+html:has(> body.admin-bar) {
+	scroll-padding-top: 128px;
+}
+
+html:not(.smooth-scroll) {
+	scroll-behavior: auto;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+	html.smooth-scroll {
+		scroll-behavior: smooth;
+	}
+}

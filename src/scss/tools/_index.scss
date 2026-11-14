@@ -1,0 +1,5 @@
+// Tools: variables and mixins only — no CSS output.
+// Usage in any partial: @use '../tools' as *;
+
+@forward 'breakpoints';
+@forward 'mixins';
