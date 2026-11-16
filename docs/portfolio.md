@@ -55,7 +55,7 @@ Short (164):
 - **8 custom Elementor widgets:** Nav Menu, Menu List, Company Info, Post Grid, Archive Title, Post Header, Post Content, Blog Sidebar.
 - **Design system:** 55 global classes, 22 variables, Default Styles.
 - **45 recorded decisions** (`docs/decisions.md`), an AI-process log (`docs/workflow-log.md`).
-- **Time:** about 35 hours from an empty folder to a finished site with a blog and two languages, including environment setup and documentation — estimated from the log, partly checked against commits. A repeat page built from existing recipes — about 25 minutes.
+- **Time** (counted from the Claude Code session transcripts, see `docs/workflow-log.md`, "Time from the transcripts"): the site itself — from the first assessment of the design to the accepted blog, documentation included — **about 9 hours of agent work**, **about 15 hours including the user's reviews and decisions** (11 sittings over 8 days). One-time environment setup (Gulp, Docker, MCP) — another ~2 hours of agent work (~3 hours with the user). A repeat page built from existing recipes — about 20 minutes (Services — 20, Contact — 17). An earlier version said "about 35 hours": that was the sum of estimates made along the way in the log, inflated about threefold.
 - **The user made no manual edits to the layout**: decisions at forks and review — the human; execution and self-check — the agent.
 
 ## How to rebuild

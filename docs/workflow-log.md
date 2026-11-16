@@ -6,7 +6,7 @@ where a human is needed and how long it takes. These notes later supply argument
 
 ## How to keep it
 
-One entry — one work step. Keep it short and include numbers.
+One entry — one work step. Keep it short and include numbers. Time comes from the session transcript timestamps or from commits, not from a guess: the estimates made along the way in the rows below are inflated about threefold (see "Time from the transcripts").
 
 | Date | Step / task | Tools | Time | What the agent did | Done by hand | Issues and takeaways |
 |------|--------------|-------------|-------|----------------------|--------------------|-------------------|
@@ -68,12 +68,13 @@ One entry — one work step. Keep it short and include numbers.
 - After any global change (kit, menus, breakpoints), do a quick pass over all finished sections, not just the current one: that's how the unlinked header menu was found.
 - A classic widget inside an atomic layout (form, menu): MCP doesn't create it, but a custom WP-CLI command using the Elementor document API handles it in a minute, and later MCP builds leave it alone. Such commands are worth keeping in the project — they'll come in handy on client sites.
 - Data in UI kit designs can be real (company details, names) — proofread the copy before publishing, not just the layout.
+- Count time from the session transcripts or commits instead of estimating it along the way: the agent's estimates in the table turned out about three times too high (H5: 45 minutes logged, 7 by the commits). Only counted numbers go to clients and the portfolio.
 
 ## Stage 5 summary (2026-11-10)
 
 **Result.** Three pages of the design (Home, Services, Contact) on Elementor 4 Free with an atomic layout, header and footer, responsive layouts for tablet and phone (25 sections, all accepted), a Contact Form 7 form, company contacts from a single settings page (SCF + a custom widget), a German version of the site (Polylang), layout and design system exported to git. Design system: 22 variables, 46 global classes, Default Styles; 3 custom Elementor widgets, 12 asset generators from Figma, 37 recorded decisions.
 
-**Time.** Per the log — about 26 hours from the first step (2026-10-03) to closing stage 5. These are estimates made along the way. Some were checked against commits, and the early estimates were probably inflated: for Services, the logged 1.5 hours turned out to be 25 minutes per the commits. The orders of magnitude: a section with new solutions (animation, carousel, background from a render) — 40 minutes to 2 hours including refinements after feedback; a repeat page built from existing recipes — about 25 minutes in total.
+**Time.** ~~Per the log — about 26 hours from the first step (2026-10-03) to closing stage 5.~~ Corrected on 2026-11-16 from the session transcripts (see "Time from the transcripts" below): the estimates made along the way in the table are inflated about threefold. Up to closing stage 5 — **about 6 h 10 min of agent work on the layout** and ~1 h 45 min on the environment (stages 2–4; October 3–5 not included — no transcripts, ~1.5 hours by the commits). The orders of magnitude: a section with new solutions (animation, carousel, background from a render) — 10 to 40 minutes of agent work including refinements after feedback; a repeat page built from existing recipes — about 20 minutes in total.
 
 **Who did what.**
 - **The agent:** all the code (theme, SCSS, JS, WP-CLI commands), the layout of every section via Elementor MCP, assets from Figma, copy and translation, self-check with Playwright screenshots at 4–9 widths, documentation, commits.
@@ -88,3 +89,25 @@ One entry — one work step. Keep it short and include numbers.
 - The limitations of Elementor MCP (no classic widgets, no multi-layer backgrounds and part of CSS, no media upload) are covered by small WP-CLI commands using the Elementor document API — worth offering to clients as part of the process.
 - For the client — editability: everything is in Elementor, contacts live in one place in the admin, a second language version comes from the same process; the layout is in git with a clear history.
 - A human is needed for decisions and review; the agent handles execution and documentation on its own — and records why things were done the way they were.
+
+## Time from the transcripts (2026-11-16)
+
+**How it was counted.** From the timestamps in the Claude Code session transcripts: agent work runs from the user's message to the agent's last action before the next message (pauses longer than 10 minutes inside a turn would have been cut — there were none). Waiting for the user's answers and reviews is not included. "Including the user" means the same sittings in full, from the first message to the last action; a gap of more than 45 minutes ends a sitting. Checked against the commits: for example, H4 and H5 took 8 and 7 minutes between commits, while the table says 50 and 45 minutes.
+
+**The site — from the first assessment of the design (2026-10-17) to the accepted About Us page and blog (2026-11-14):**
+
+| Phase | Agent work |
+|-------|------------|
+| Design assessment and foundation (design system, Site Parts, form) | ~55 min |
+| Home: header, footer, 12 sections | ~3 h 40 min |
+| Services and Contact in full (+ fixes on 2026-11-02) | ~55 min |
+| Layout export to git, Company Info, German version, Elementor and plugin updates | ~1 h 10 min |
+| Real copy instead of placeholders, SEO, video, anchors | ~1 h 10 min |
+| About Us and blog (EN + DE) | ~1 h |
+| **Total** | **~8 h 50 min** (documentation and commits included) |
+
+Including the user's reviews, answers and acceptance — **~15 hours** over 11 sittings (8 days). The longest turn was About Us and the blog, 51 minutes: 146 tool calls, no pause longer than three minutes.
+
+**Separately, not in the total:** the environment (stages 2–4: Gulp, Docker, MCP) — ~1 h 45 min of agent work, ~3 hours including the user; October 3–5 (plan, choice of design, moving the Docker disk) — no transcripts, ~1.5 hours by the commits; portfolio materials, the public repository, deployment to hosting.
+
+**Takeaway.** The first page (Home) took about 40% of the total: that's where the recipes, the complex animations and the rules came from. The next two pages, built from the recipes, took under an hour together.

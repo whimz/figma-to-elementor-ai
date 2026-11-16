@@ -39,9 +39,11 @@ Where Elementor MCP has gaps, small WP-CLI commands in the theme's tooling fill 
 - media import;
 - layout export to Git.
 
-**In numbers** (estimates from the log):
-- about 35 hours from an empty folder to the finished site, including environment setup and documentation;
-- a repeated page built from existing recipes took about 25 minutes;
+**In numbers** (counted from the Claude Code session transcripts, see [docs/workflow-log.md](docs/workflow-log.md)):
+- about 9 hours of agent work for the site itself, from the first look at the design to the accepted blog, documentation included;
+- about 15 hours including the user's reviews and decisions;
+- plus about 2 hours of one-time environment setup (Gulp, Docker, MCP);
+- a repeated page built from existing recipes took about 20 minutes;
 - the user made no manual edits to the layout — they made the decisions and did the reviews.
 
 ![Everything stays editable in Elementor](docs/images/elementor-editor.jpg)
