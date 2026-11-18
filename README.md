@@ -4,6 +4,8 @@ A WordPress site rebuilt from a Figma UI kit on **Elementor V4 (Free)** and a He
 
 The site is a demo for a fictional crypto-tax firm, "Legite". It is a practice and portfolio project, not a client site.
 
+**Live demo:** [legite.boldcat.uk](https://legite.boldcat.uk) (English) · [legite.boldcat.uk/de/](https://legite.boldcat.uk/de/) (German). It is a demo: hidden from search engines, and the contact form doesn't send mail.
+
 ![The finished site on desktop and phone](docs/images/cover.jpg)
 
 ## What was built
