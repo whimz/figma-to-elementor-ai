@@ -178,11 +178,11 @@ class AIEC_Widget_Company_Info extends \Elementor\Widget_Base {
 
 		switch ( $settings['item'] ) {
 			case 'phone':
-				$html = $info['phone'] ? sprintf( '<p class="aiec-company-info__link"><a href="tel:%s">%s</a></p>', esc_attr( $info['phone_link'] ), esc_html( $info['phone'] ) ) : '';
+				$html = $info['phone'] ? sprintf( '<p class="aiec-company-info__link"><a href="%s">%s</a></p>', esc_url( 'tel:' . $info['phone_link'] ), esc_html( $info['phone'] ) ) : '';
 				break;
 
 			case 'email':
-				$html = $info['email'] ? sprintf( '<p class="aiec-company-info__link"><a href="mailto:%1$s">%2$s</a></p>', esc_attr( antispambot( $info['email'] ) ), esc_html( antispambot( $info['email'] ) ) ) : '';
+				$html = $info['email'] ? sprintf( '<p class="aiec-company-info__link"><a href="%1$s">%2$s</a></p>', esc_url( 'mailto:' . antispambot( $info['email'] ) ), esc_html( antispambot( $info['email'] ) ) ) : '';
 				break;
 
 			case 'socials':

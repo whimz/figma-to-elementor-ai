@@ -105,6 +105,8 @@ class AIEC_Widget_Archive_Title extends \Elementor\Widget_Base {
 			$title = esc_html( single_term_title( '', false ) );
 			$lead  = term_description() ? wp_strip_all_tags( term_description() ) : $settings['lead'];
 		} elseif ( is_search() ) {
+			// The blog parts are not run through do_shortcode() (inc/site-parts.php), so a "[shortcode]"
+			// typed into the search box is printed as text.
 			$title = esc_html(
 				sprintf(
 					/* translators: %s: search words. */

@@ -42,6 +42,9 @@ function aiec_register_site_parts() {
 			'menu_icon'           => 'dashicons-layout',
 			'menu_position'       => 21,
 			'supports'            => array( 'title', 'elementor' ),
+			// Parts render on every page: only users who can manage pages (Editors and up) may edit them.
+			'capability_type'     => 'page',
+			'map_meta_cap'        => true,
 		)
 	);
 }
@@ -207,8 +210,8 @@ function aiec_keep_site_part_styles_in_editor() {
 	}
 
 	if ( $css ) {
-		// Elementor-generated CSS, scoped above.
-		echo '<style id="aiec-site-part-styles">' . $css . "</style>\n"; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+		// Elementor-generated CSS, scoped above. "</" is escaped so the CSS can never close the <style> tag.
+		echo '<style id="aiec-site-part-styles">' . str_replace( '</', '<\/', $css ) . "</style>\n"; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 	}
 }
 
@@ -251,7 +254,15 @@ function aiec_render_site_part( $location ) {
 		return;
 	}
 
-	// Shortcodes run here as they do in page content (pages get them from the_content), e.g. [aiec_year].
 	// Elementor escapes the rendered document itself.
-	echo do_shortcode( \Elementor\Plugin::instance()->frontend->get_builder_content_for_display( $part_id ) ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+	$html = \Elementor\Plugin::instance()->frontend->get_builder_content_for_display( $part_id );
+
+	// Shortcodes (e.g. [aiec_year] in the footer) run only in the header and footer. The blog parts
+	// print visitor input (the search query) and the article body (already run through the_content),
+	// so running shortcodes over them would execute shortcodes typed into the search box.
+	if ( in_array( $location, array( 'header', 'footer' ), true ) ) {
+		$html = do_shortcode( $html );
+	}
+
+	echo $html; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 }

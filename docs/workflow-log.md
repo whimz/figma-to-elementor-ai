@@ -111,3 +111,18 @@ Including the user's reviews, answers and acceptance — **~15 hours** over 11 s
 **Separately, not in the total:** the environment (stages 2–4: Gulp, Docker, MCP) — ~1 h 45 min of agent work, ~3 hours including the user; October 3–5 (plan, choice of design, moving the Docker disk) — no transcripts, ~1.5 hours by the commits; portfolio materials, the public repository, deployment to hosting.
 
 **Takeaway.** The first page (Home) took about 40% of the total: that's where the recipes, the complex animations and the rules came from. The next two pages, built from the recipes, took under an hour together.
+
+## Theme security review (2026-11-19)
+
+Before linking the public repository from the Upwork portfolio, a separate agent reviewed the theme read-only: 2,359 lines of PHP, 663 lines of JS, the mu-plugin and the WP-CLI commands. Nothing critical. Two medium issues were confirmed, in the code and on the live demo:
+
+- **Shortcodes from the search box.** `aiec_render_site_part()` ran `do_shortcode()` over every Site Part, the blog templates included, and the search query is printed in the title. `esc_html` leaves square brackets alone, so `/?s=[aiec_year]` showed "Search results for “2026”": any visitor could run any shortcode on the site. Fixed: shortcodes run only in the header and footer, where `[aiec_year]` lives.
+- **Password-protected articles were shown in full:** the Post Content widget printed `the_content` without `post_password_required()`. It now shows the password form, and the template preview skips protected articles.
+- **Low:** Authors could create Site Parts. They now use page capabilities (`capability_type => page`).
+- **WordPress coding-standard details:** `esc_url` for `tel:` and `mailto:`, a server-side 1–12 limit for the Post Grid article count, `get_search_query( false )` instead of double escaping, `</` in the preview CSS.
+
+**What didn't work.** A fallback — encoding `[` and `]` in the search title — had no effect: Elementor V4 re-parses the HTML of classic widgets inside atomic elements, and the entities turn back into brackets. It was reverted; the real protection is not running `do_shortcode()` on the blog templates.
+
+**Checked locally:** searching `[aiec_year]` shows the text; the footer year is there in EN and DE; a temporary password-protected article shows the form and the template preview picks another article; Administrators and Editors can edit Site Parts, Authors can't; pages return 200 and `debug.log` has no new errors. The fix is live on the demo.
+
+**Takeaway.** The agent-written code was careful (escaping at output, no `$_POST` or SQL at all), yet only a separate review found two real holes. Code from AI needs a security review before hand-over too.

@@ -159,7 +159,7 @@ class AIEC_Widget_Post_Grid extends \Elementor\Widget_Base {
 			'post_status'         => 'publish',
 			'ignore_sticky_posts' => true,
 			'no_found_rows'       => true,
-			'posts_per_page'      => 'latest' === $settings['source'] ? max( 1, (int) $settings['count'] ) : (int) get_option( 'posts_per_page' ),
+			'posts_per_page'      => 'latest' === $settings['source'] ? min( 12, max( 1, (int) $settings['count'] ) ) : (int) get_option( 'posts_per_page' ), // same 1–12 range as the editor control.
 			'lang'                => aiec_blog_is_preview() ? aiec_blog_preview_language() : ( function_exists( 'pll_current_language' ) ? pll_current_language() : '' ),
 		);
 

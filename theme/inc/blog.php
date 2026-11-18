@@ -126,9 +126,10 @@ function aiec_blog_current_post() {
 
 	$posts = get_posts(
 		array(
-			'numberposts' => 1,
-			'post_status' => 'publish',
-			'lang'        => aiec_blog_preview_language(),
+			'numberposts'  => 1,
+			'post_status'  => 'publish',
+			'has_password' => false, // never preview a password-protected article.
+			'lang'         => aiec_blog_preview_language(),
 		)
 	);
 

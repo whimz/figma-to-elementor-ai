@@ -69,6 +69,12 @@ class AIEC_Widget_Post_Content extends \Elementor\Widget_Base {
 			return;
 		}
 
+		// Password-protected article: show WordPress's password form until the visitor enters it.
+		if ( post_password_required( $post ) ) {
+			echo '<div class="aiec-post-content">' . get_the_password_form( $post ) . '</div>'; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- core form markup.
+			return;
+		}
+
 		// The article's own blocks, rendered as WordPress renders post content (block markup, embeds,
 		// responsive images). Articles are not built with Elementor, so no recursion into this part.
 		$content = apply_filters( 'the_content', $post->post_content ); // phpcs:ignore WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedHooknameFound -- core hook.

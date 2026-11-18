@@ -139,7 +139,7 @@ class AIEC_Widget_Blog_Sidebar extends \Elementor\Widget_Base {
 			<p class="aiec-blog-sidebar__title"><?php echo esc_html( $settings['title'] ); ?></p>
 			<form class="aiec-blog-sidebar__search" role="search" method="get" action="<?php echo esc_url( home_url( '/' ) ); ?>">
 				<label class="screen-reader-text" for="<?php echo esc_attr( $search_id ); ?>"><?php esc_html_e( 'Search articles', 'ai-elem-child' ); ?></label>
-				<input id="<?php echo esc_attr( $search_id ); ?>" type="search" name="s" value="<?php echo esc_attr( get_search_query() ); ?>" placeholder="<?php esc_attr_e( 'Search articles', 'ai-elem-child' ); ?>">
+				<input id="<?php echo esc_attr( $search_id ); ?>" type="search" name="s" value="<?php echo esc_attr( get_search_query( false ) ); ?>" placeholder="<?php esc_attr_e( 'Search articles', 'ai-elem-child' ); ?>">
 				<input type="hidden" name="post_type" value="post">
 				<button type="submit" aria-label="<?php esc_attr_e( 'Search', 'ai-elem-child' ); ?>"><?php echo aiec_icon( 'search' ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- theme SVG. ?></button>
 			</form>
